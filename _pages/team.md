@@ -1,13 +1,7 @@
----
-layout: archive
-title: "Team"
-permalink: /team/
-author_profile: true
----
+
 
 # Meet Our Team
 
-Our amazing team members who make everything possible.
 
 ---
 
