@@ -6,6 +6,6 @@ author_profile: true
 
 ---
 
-  You can also find my articles on [Google Scholar](https://scholar.google.com/citations?user=ZaQzXbUAAAAJ&hl=en&oi=ao).
+  You can find my articles on [Google Scholar](https://scholar.google.com/citations?user=ZaQzXbUAAAAJ&hl=en&oi=ao).
   
 {% include base_path %}
