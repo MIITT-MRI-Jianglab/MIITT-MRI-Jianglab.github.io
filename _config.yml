@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Yun Jiang"
+title                    : "Jiang Lab"
 title_separator          : "-"
 name                     : &name "Yun Jiang"
 description              : &description "personal description"
@@ -23,21 +23,21 @@ repository               : "MIITT-MRI-Jianglab.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Yun JIang"
+  name             : "Yun Jiang"
   pronouns         : # example: "she/her"  
   bio              : "Assistant Professor, Department of Radiology"
-  location         : "Ann Arbor, MI"
   employer         : "University of Michigan"
+  location         : "Ann Arbor, MI"
   uri              : # URL
   email            : "yunjiang@umich.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=IgJsqoIAAAAJ&hl=en&authuser=1"
+  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=Yun+Jiang+MRI"
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0002-0713-9641"
   semantic         : # URL
-  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=Yun+Jiang+MRI"
   researchgate     : # URL
   scopus           : # URL
 
