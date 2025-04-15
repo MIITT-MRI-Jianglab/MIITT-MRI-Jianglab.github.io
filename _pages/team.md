@@ -5,32 +5,32 @@ permalink: /team/
 author_profile: true
 ---
 
-{% include base_path %}
+###{% include base_path %}
 
 
 
 ---
 
-### 👤 John Doe  
+### Jiayao Yang 
 ![John Doe - CEO](https://i.pravatar.cc/150?img=1)  
-**Role:** CEO & Founder  
-**Bio:** Visionary leader with 15+ years of experience in tech innovation.  
+PhD student of EECS 
+**Intro:** Visionary leader  
 **Connect:** [LinkedIn](#) | [Twitter](#) | [Email](#)
 
 ---
 
-### 👩💻 Jane Smith  
+### Hongze Yu  
 ![Jane Smith - CTO](https://i.pravatar.cc/150?img=2)  
-**Role:** CTO  
-**Bio:** Full-stack developer specializing in scalable architectures.  
+PhD student of EECS
+**Intro:** Full-stack developer 
 **Connect:** [GitHub](#) | [Medium](#)
 
 ---
 
-### 📈 Mike Johnson  
+### Chris Keen  
 ![Mike Johnson - Marketing](https://i.pravatar.cc/150?img=3)  
-**Role:** Marketing Director  
-**Bio:** Digital marketing expert focused on growth strategies.  
+PhD student of BME 
+**Intro:** Digital 
 **Connect:** [Instagram](#) | [Facebook](#)
 
 ---
