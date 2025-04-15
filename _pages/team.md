@@ -1,8 +1,8 @@
 ---
-layout: archive
+/*layout: archive*/
 title: "Meet Our Team"
 permalink: /team/
-author_profile: true
+/*author_profile: true*/
 
 ---
 
