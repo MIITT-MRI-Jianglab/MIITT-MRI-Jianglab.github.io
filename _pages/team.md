@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: archive
 title: "Meet Our Team"
 permalink: /team/
 author_profile: false
+classes: wide #uses theme's full-width class
 
 ---
 
@@ -77,92 +78,75 @@ author_profile: false
 </div>
 
 <style>
-.team-container {
+.archive .team-container {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 4rem !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 2rem 0 !important;
+}
+
+/* Team member grid */
+.team-member {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 250px 1fr;
   gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 2rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-.member-content {
-  display: grid;
-  grid-template-columns: 250px 1fr !important;
-  gap: 0 !important;
-  align-items: start;
-}
-
-.left-column {
-  width: 250px; /* Explicit width matching grid column */
-  padding: 1rem;
-  box-sizing: border-box; /* Prevent overflow */
-}
-
-.member-photo {
+/* Left column */
+.team-member__photo {
   width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.member-info {
+.team-member__social {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Right column */
+.team-member__info {
   padding-right: 2rem;
 }
 
-.role {
-  color: #666;
-  font-size: 1.1rem;
-  margin: 0.8rem 0;
-}
-
-.bio {
-  color: #444;
-  line-height: 1.7;
-  margin-top: 1rem;
-}
-
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.social-links a {
-  color: #333;
-  font-size: 1.8rem;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  transform: translateY(-3px);
-  color: #0077b5; /* LinkedIn blue */
-}
-
-  @media (max-width: 768px) {
-  .member-content {
-    grid-template-columns: 1fr !important;
-    gap: 2rem;
-  }
-  
-  .left-column {
-    width: 100% !important;
-    margin: 0 auto;
-  }
-  
-  .member-photo {
-    width: 200px !important;
-    height: 200px !important;
-    margin: 0 auto;
-  
-  .member-info {
+/* Mobile styles */
+@media (max-width: 768px) {
+  .team-member {
+    grid-template-columns: 1fr;
     text-align: center;
+  }
+  
+  .team-member__photo {
+    height: 200px;
+    width: 200px !important;
+    margin: 0 auto;
+  }
+  
+  .team-member__info {
     padding-right: 0;
   }
 }
-</style>
 
+/* Social links */
+.team-member__social a {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 0 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.team-member__social a:hover {
+  color: #0077b5;
+  transform: translateY(-2px);
+}
+</style>
 <!-- Add Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 ---
