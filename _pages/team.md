@@ -7,6 +7,7 @@ classes: wide #uses theme's full-width class
 
 ---
 <style>
+/* Existing styles */
 .archive .team-container {
   display: grid !important;
   grid-template-columns: 1fr !important;
@@ -16,7 +17,6 @@ classes: wide #uses theme's full-width class
   padding: 2rem 0 !important;
 }
 
-/* Team member grid */
 .team-member {
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -25,14 +25,26 @@ classes: wide #uses theme's full-width class
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Left column */
+/* NEW: Grid hover effect */
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
 .team-member__photo {
   width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* NEW: Photo hover effect */
+.team-member:hover .team-member__photo {
+  transform: scale(1.02);
 }
 
 .team-member__social {
@@ -40,12 +52,38 @@ classes: wide #uses theme's full-width class
   text-align: center;
 }
 
-/* Right column */
 .team-member__info {
   padding-right: 2rem;
 }
 
-/* Mobile styles */
+/* Enhanced Social Icon Hover Effects */
+.team-member__social a {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 0 0.8rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.team-member__social a:hover {
+  color: #0077b5; /* LinkedIn blue */
+  transform: translateY(-3px) scale(1.15);
+  text-shadow: 0 2px 8px rgba(0,119,181,0.2);
+}
+
+/* Different colors for different socials */
+.team-member__social a[href*="github.com"]:hover {
+  color: #181717; /* GitHub black */
+}
+
+.team-member__social a[href*="twitter.com"]:hover {
+  color: #1DA1F2; /* Twitter blue */
+}
+
+.team-member__social a[href^="mailto:"]:hover {
+  color: #EA4335; /* Gmail red */
+}
+
 @media (max-width: 768px) {
   .team-member {
     grid-template-columns: 1fr;
@@ -61,19 +99,6 @@ classes: wide #uses theme's full-width class
   .team-member__info {
     padding-right: 0;
   }
-}
-
-/* Social links */
-.team-member__social a {
-  color: #333;
-  font-size: 1.5rem;
-  margin: 0 0.8rem;
-  transition: all 0.3s ease;
-}
-
-.team-member__social a:hover {
-  color: #0077b5;
-  transform: translateY(-2px);
 }
 </style>
 
