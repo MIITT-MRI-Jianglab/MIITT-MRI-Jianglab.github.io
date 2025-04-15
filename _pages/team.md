@@ -9,7 +9,7 @@ author_profile: true
 
 ### Jiayao Yang 
 ![Jiayao](https://i.pravatar.cc/150?img=1)  
-PhD student of EECS
+**Role:** PhD student of EECS
 **Intro:** Visionary leader  
 **Connect:** [LinkedIn](#) | [Twitter](#) | [Email](#)
 
