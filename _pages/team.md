@@ -7,7 +7,6 @@ classes: wide #uses theme's full-width class
 
 ---
 <style>
-/* Existing styles */
 .archive .team-container {
   display: grid !important;
   grid-template-columns: 1fr !important;
