@@ -79,46 +79,53 @@ author_profile: true
 <style>
 .team-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem 0;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .team-member {
-  background: #ffffff;
+  background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
   transition: transform 0.3s ease;
-  overflow: hidden;
 }
 
 .team-member:hover {
   transform: translateY(-5px);
 }
 
+.member-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
 .member-photo {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
-  border-bottom: 3px solid #f0f0f0;
+  border-radius: 10px;
 }
 
 .member-info {
-  padding: 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .role {
   color: #666;
-  font-weight: 500;
+  font-size: 1.1rem;
   margin: 0.5rem 0;
 }
 
 .bio {
   color: #444;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin: 1rem 0;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  max-width: 800px;
 }
 
 .social-links {
@@ -136,6 +143,17 @@ author_profile: true
 
 .social-links a:hover {
   color: #0077b5; /* LinkedIn blue */
+}
+
+  @media (max-width: 768px) {
+  .member-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .member-photo {
+    height: 200px;
+    width: 100%;
+  }
 }
 </style>
 
