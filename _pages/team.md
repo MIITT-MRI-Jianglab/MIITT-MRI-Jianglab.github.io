@@ -4,7 +4,9 @@ title: "Meet Our Team"
 permalink: /team/
 author_profile: true
 ---
-
+| Photo | Name & Role | Bio | Social Links |
+|-------|-------------|-----|--------------|
+| ![John Doe](https://i.pravatar.cc/150?img=1) | **John Doe**<br>*CEO & Founder* | Visionary leader with 15+ years in tech innovation | [LinkedIn](#) • [Twitter](#) • [Email](#) |
 ---
 
 ### Jiayao Yang 
