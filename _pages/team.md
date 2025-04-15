@@ -9,11 +9,11 @@ author_profile: true
 <div class="team-container">
 
 <div class="team-member">
-  <img src="https://i.pravatar.cc/300?img=1" alt="John Doe" class="member-photo">
+  <img src="https://i.pravatar.cc/300?img=1" alt="Jiayao Yang" class="member-photo">
   <div class="member-info">
-    <h3>John Doe</h3>
-    <p class="role">CEO & Founder</p>
-    <p class="bio">Tech visionary with 15+ years experience building disruptive solutions</p>
+    <h3>Jiayao Yang</h3>
+    <p class="role">PhD student in Electrical Engineering</p>
+    <p class="bio">RF Pulse Design</p>
     <div class="social-links">
       <a href="#"><i class="fab fa-linkedin"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
@@ -23,11 +23,11 @@ author_profile: true
 </div>
 
 <div class="team-member">
-  <img src="https://i.pravatar.cc/300?img=2" alt="Jane Smith" class="member-photo">
+  <img src="https://i.pravatar.cc/300?img=2" alt="Hongze Yu" class="member-photo">
   <div class="member-info">
-    <h3>Jane Smith</h3>
-    <p class="role">CTO</p>
-    <p class="bio">Full-stack architect passionate about scalable systems</p>
+    <h3>Hongze Yu</h3>
+    <p class="role">PhD student in Electrical Engineering</p>
+    <p class="bio">Deep-learning MRI Recon</p>
     <div class="social-links">
       <a href="#"><i class="fab fa-github"></i></a>
       <a href="#"><i class="fab fa-dev"></i></a>
@@ -36,11 +36,37 @@ author_profile: true
 </div>
 
 <div class="team-member">
-  <img src="https://i.pravatar.cc/300?img=3" alt="Mike Johnson" class="member-photo">
+  <img src="https://i.pravatar.cc/300?img=3" alt="Chris Keen" class="member-photo">
   <div class="member-info">
-    <h3>Mike Johnson</h3>
-    <p class="role">Marketing Director</p>
-    <p class="bio">Growth hacker with expertise in viral campaigns</p>
+    <h3>Chris Keen</h3>
+    <p class="role">PhD student in Biomedical Engineering</p>
+    <p class="bio">MRF</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="team-member">
+  <img src="https://i.pravatar.cc/300?img=3" alt="Michael Jaroszewicz" class="member-photo">
+  <div class="member-info">
+    <h3>Michael Jaroszewicz</h3>
+    <p class="role">Postdoctoral Research Fellow</p>
+    <p class="bio">Diffusion</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="team-member">
+  <img src="https://i.pravatar.cc/300?img=3" alt="Tejinder Kaur" class="member-photo">
+  <div class="member-info">
+    <h3>Tejinder Kaur</h3>
+    <p class="role">Postdoctoral Research Fellow</p>
+    <p class="bio">Clinical Applications</p>
     <div class="social-links">
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-tiktok"></i></a>
