@@ -5,15 +5,11 @@ permalink: /team/
 author_profile: true
 ---
 
-###{% include base_path %}
-
-
-
 ---
 
 ### Jiayao Yang 
 ![John Doe - CEO](https://i.pravatar.cc/150?img=1)  
-**** PhD student of EECS 
+**PhD student of EECS**
 **Intro:** Visionary leader  
 **Connect:** [LinkedIn](#) | [Twitter](#) | [Email](#)
 
@@ -21,7 +17,7 @@ author_profile: true
 
 ### Hongze Yu  
 ![Jane Smith - CTO](https://i.pravatar.cc/150?img=2)  
-PhD student of EECS
+**PhD student of EECS**
 **Intro:** Full-stack developer 
 **Connect:** [GitHub](#) | [Medium](#)
 
@@ -29,7 +25,7 @@ PhD student of EECS
 
 ### Chris Keen  
 ![Mike Johnson - Marketing](https://i.pravatar.cc/150?img=3)  
-PhD student of BME 
+**PhD student of BME** 
 **Intro:** Digital 
 **Connect:** [Instagram](#) | [Facebook](#)
 
