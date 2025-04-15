@@ -196,6 +196,51 @@ classes: wide #uses theme's full-width class
   </div>
 
 
+   <!-- Team Member 5 -->
+  <div class="team-member">
+    <div class="team-member__left">
+      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+           alt="Michael Jaroszewicz" 
+           class="team-member__photo">
+      <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-member__info">
+      <h3 id="Michael-Jaroszewicz">Michael Jaroszewicz</h3>
+      <p class="role"><em>Postdoctoral Research Fellow</em></p>
+      <div class="bio">
+        <p>Diffusion</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Member 6 -->
+  <div class="team-member">
+    <div class="team-member__left">
+      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+           alt="Catherine Liang" 
+           class="team-member__photo">
+      <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-member__info">
+      <h3 id="Catherine-Liang">Catherine Liang</h3>
+      <p class="role"><em>Undergraduate student in BME</em></p>
+      <div class="bio">
+        <p>AI</p>
+      </div>
+    </div>
+  </div>
+
+
 
 
 
