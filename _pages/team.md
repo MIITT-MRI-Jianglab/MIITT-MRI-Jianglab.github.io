@@ -12,8 +12,9 @@ classes: wide #uses theme's full-width class
   --team-bg: #ffffff;
   --team-text: #333333;
   --team-shadow: rgba(0, 0, 0, 0.08);
-  --social-icon: #333333;
+  --social-icon: #666666;
   --social-hover: #0077b5;
+  --role-color: #666666;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,26 +24,27 @@ classes: wide #uses theme's full-width class
     --team-shadow: rgba(255, 255, 255, 0.08);
     --social-icon: #909090;
     --social-hover: #4dabf7;
+    --role-color: #a0a0a0;
   }
 }
 
-/* If using theme toggle class instead of OS preference */
 .dark-theme {
   --team-bg: #1a1a1a;
   --team-text: #e0e0e0;
   --team-shadow: rgba(255, 255, 255, 0.08);
   --social-icon: #909090;
   --social-hover: #4dabf7;
+  --role-color: #a0a0a0;
 }
 
-  
-.archive .team-container {
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  gap: 4rem !important;
-  max-width: 1200px !important;
-  margin: 0 auto !important;
-  padding: 2rem 0 !important;
+/* Team Grid Styles */
+.team-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .team-member {
@@ -51,23 +53,18 @@ classes: wide #uses theme's full-width class
   gap: 3rem;
   padding: 2rem;
   background: var(--team-bg);
-  border-radius: 15px;
   color: var(--team-text);
+  border-radius: 15px;
   box-shadow: 0 5px 15px var(--team-shadow);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.role {
-  color: color-mix(in srgb, var(--team-text) 70%, transparent);
-}
-
-/* NEW: Grid hover effect */
 .team-member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 25px var(--team-shadow);
 }
 
-.team-member__photo {
+.member-photo {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -75,65 +72,68 @@ classes: wide #uses theme's full-width class
   transition: transform 0.3s ease;
 }
 
-/* NEW: Photo hover effect */
-.team-member:hover .team-member__photo {
+.team-member:hover .member-photo {
   transform: scale(1.02);
 }
 
-.team-member__social {
-  margin-top: 1.5rem;
-  text-align: center;
-}
-
-.team-member__info {
+.member-info {
   padding-right: 2rem;
 }
 
-/* Enhanced Social Icon Hover Effects */
-.team-member__social a {
+.role {
+  color: var(--role-color);
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  font-style: italic;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.social-links a {
   color: var(--social-icon);
   font-size: 1.5rem;
-  margin: 0 0.8rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-block;
+  transition: all 0.3s ease;
 }
 
-.team-member__social a:hover {
-  color: var(--social-hover);
-  transform: translateY(-3px) scale(1.15);
-  text-shadow: 0 2px 8px rgba(0,119,181,0.2);
+.social-links a:hover {
+  transform: translateY(-3px);
 }
 
-/* Different colors for different socials */
-.team-member__social a[href*="github.com"]:hover {
-  color: #181717; /* GitHub black */
-}
-
-.team-member__social a[href*="twitter.com"]:hover {
-  color: #1DA1F2; /* Twitter blue */
-}
-
-.team-member__social a[href^="mailto:"]:hover {
-  color: #EA4335; /* Gmail red */
-}
+/* Platform-specific hover colors */
+.social-links a[href*="linkedin.com"]:hover { color: #0077b5; }
+.social-links a[href*="github.com"]:hover { color: #181717; }
+.social-links a[href*="twitter.com"]:hover { color: #1da1f2; }
+.social-links a[href*="instagram.com"]:hover { color: #e1306c; }
+.social-links a[href^="mailto:"]:hover { color: #ea4335; }
 
 @media (max-width: 768px) {
   .team-member {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 2rem;
   }
   
-  .team-member__photo {
+  .member-photo {
     height: 200px;
-    width: 200px !important;
+    width: 200px;
     margin: 0 auto;
   }
   
-  .team-member__info {
+  .member-info {
     padding-right: 0;
+  }
+  
+  .social-links {
+    justify-content: center;
   }
 }
 </style>
+
 
 <div class="team-container">
 
@@ -272,14 +272,25 @@ classes: wide #uses theme's full-width class
       </div>
     </div>
   </div>
-
-
-
-
-
-
 </div>
 
+<!-- Theme Persistence Script -->
+<script>
+// Save theme preference
+const themeToggle = document.querySelector('.theme-toggle');
+if (themeToggle) {
+  themeToggle.addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+  });
+}
+
+// Load saved theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+}
+</script>
 
 <!-- Add Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
