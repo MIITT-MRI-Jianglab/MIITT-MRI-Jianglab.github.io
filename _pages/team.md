@@ -7,36 +7,6 @@ classes: wide #uses theme's full-width class
 
 ---
 <style>
-/* Theme Variables */
-:root {
-  --team-bg: #ffffff;
-  --team-text: #333333;
-  --team-shadow: rgba(0, 0, 0, 0.08);
-  --social-icon: #666666;
-  --social-hover: #0077b5;
-  --role-color: #666666;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --team-bg: #1a1a1a;
-    --team-text: #e0e0e0;
-    --team-shadow: rgba(255, 255, 255, 0.08);
-    --social-icon: #909090;
-    --social-hover: #4dabf7;
-    --role-color: #a0a0a0;
-  }
-}
-
-.dark-theme {
-  --team-bg: #1a1a1a;
-  --team-text: #e0e0e0;
-  --team-shadow: rgba(255, 255, 255, 0.08);
-  --social-icon: #909090;
-  --social-hover: #4dabf7;
-  --role-color: #a0a0a0;
-}
-
 /* Team Grid Styles */
 .team-container {
   display: grid;
@@ -52,16 +22,16 @@ classes: wide #uses theme's full-width class
   grid-template-columns: 250px 1fr;
   gap: 3rem;
   padding: 2rem;
-  background: var(--team-bg);
-  color: var(--team-text);
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
   border-radius: 15px;
-  box-shadow: 0 5px 15px var(--team-shadow);
+  box-shadow: 0 5px 15px var(--global-border-color);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px var(--team-shadow);
+  box-shadow: 0 12px 25px var(--global-border-color);
 }
 
 .member-photo {
@@ -81,7 +51,7 @@ classes: wide #uses theme's full-width class
 }
 
 .role {
-  color: var(--role-color);
+  color: var(--global-text-color);
   font-size: 1.1rem;
   margin: 0.8rem 0;
   font-style: italic;
@@ -95,7 +65,7 @@ classes: wide #uses theme's full-width class
 }
 
 .social-links a {
-  color: var(--social-icon);
+  color: var(--global-text-color);
   font-size: 1.5rem;
   transition: all 0.3s ease;
 }
