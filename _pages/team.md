@@ -173,6 +173,30 @@ classes: wide #uses theme's full-width class
   </div>
 
 
+   <!-- Team Member 4 -->
+  <div class="team-member">
+    <div class="team-member__left">
+      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+           alt="Tejinder Kaur" 
+           class="team-member__photo">
+      <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-member__info">
+      <h3 id="Tejinder-Kaur">Tejinder Kaur</h3>
+      <p class="role"><em>Postdoctoral Research Fellow</em></p>
+      <div class="bio">
+        <p>Clinical Applications</p>
+      </div>
+    </div>
+  </div>
+
+
+
 
 
 
