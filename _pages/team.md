@@ -6,77 +6,6 @@ author_profile: false
 classes: wide #uses theme's full-width class
 
 ---
-
-<div class="team-container">
-
-<div class="team-member">
-  <img src="https://i.pravatar.cc/300?img=1" alt="Jiayao Yang" class="member-photo">
-  <div class="member-info">
-    <h3>Jiayao Yang</h3>
-    <p class="role">PhD student in Electrical Engineering</p>
-    <p class="bio">RF Pulse Design</p>
-    <div class="social-links">
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fas fa-envelope"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="team-member">
-  <img src="https://i.pravatar.cc/300?img=2" alt="Hongze Yu" class="member-photo">
-  <div class="member-info">
-    <h3>Hongze Yu</h3>
-    <p class="role">PhD student in Electrical Engineering</p>
-    <p class="bio">Deep-learning MRI Recon</p>
-    <div class="social-links">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-dev"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="team-member">
-  <img src="https://i.pravatar.cc/300?img=3" alt="Chris Keen" class="member-photo">
-  <div class="member-info">
-    <h3>Chris Keen</h3>
-    <p class="role">PhD student in Biomedical Engineering</p>
-    <p class="bio">MRF</p>
-    <div class="social-links">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-tiktok"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="team-member">
-  <img src="https://i.pravatar.cc/300?img=3" alt="Michael Jaroszewicz" class="member-photo">
-  <div class="member-info">
-    <h3>Michael Jaroszewicz</h3>
-    <p class="role">Postdoctoral Research Fellow</p>
-    <p class="bio">Diffusion</p>
-    <div class="social-links">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-tiktok"></i></a>
-    </div>
-  </div>
-</div>
-
-<div class="team-member">
-  <img src="https://i.pravatar.cc/300?img=3" alt="Tejinder Kaur" class="member-photo">
-  <div class="member-info">
-    <h3>Tejinder Kaur</h3>
-    <p class="role">Postdoctoral Research Fellow</p>
-    <p class="bio">Clinical Applications</p>
-    <div class="social-links">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-tiktok"></i></a>
-    </div>
-  </div>
-</div>
-
-</div>
-
 <style>
 .archive .team-container {
   display: grid !important;
@@ -147,6 +76,38 @@ classes: wide #uses theme's full-width class
   transform: translateY(-2px);
 }
 </style>
+
+<div class="team-container">
+
+  <!-- Team Member 1 -->
+  <div class="team-member">
+    <div class="team-member__left">
+      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+           alt="John Doe" 
+           class="team-member__photo">
+      <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-member__info">
+      <h3 id="john-doe">John Doe</h3>
+      <p class="role"><em>CEO & Founder</em></p>
+      <div class="bio">
+        <p>Visionary leader with 15+ years of experience in tech innovation. Passionate about building sustainable technology solutions that make a positive social impact.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
 <!-- Add Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 ---
