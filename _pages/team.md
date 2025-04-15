@@ -244,24 +244,6 @@ classes: wide #uses theme's full-width class
   </div>
 </div>
 
-<!-- Theme Persistence Script -->
-<script>
-// Save theme preference
-const themeToggle = document.querySelector('.theme-toggle');
-if (themeToggle) {
-  themeToggle.addEventListener('click', function() {
-    document.body.classList.toggle('dark-theme');
-    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
-  });
-}
-
-// Load saved theme
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-  document.body.classList.add('dark-theme');
-}
-</script>
-
 <!-- Add Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 ---
