@@ -8,15 +8,15 @@ author_profile: true
 ---
 
 ### Jiayao Yang 
-![John Doe - CEO](https://i.pravatar.cc/150?img=1)  
-**PhD student of EECS**
+![Jiayao](https://i.pravatar.cc/150?img=1)  
+PhD student of EECS
 **Intro:** Visionary leader  
 **Connect:** [LinkedIn](#) | [Twitter](#) | [Email](#)
 
 ---
 
 ### Hongze Yu  
-![Jane Smith - CTO](https://i.pravatar.cc/150?img=2)  
+![Hongze](https://i.pravatar.cc/150?img=2)  
 **PhD student of EECS**
 **Intro:** Full-stack developer 
 **Connect:** [GitHub](#) | [Medium](#)
