@@ -154,7 +154,7 @@ classes: wide #uses theme's full-width class
   <div class="team-member">
     <div class="team-member__left">
       <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
-           alt="Chris Keen" 
+           alt="Christopher Keen" 
            class="team-member__photo">
       <div class="team-member__social">
         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -164,7 +164,7 @@ classes: wide #uses theme's full-width class
     </div>
     
     <div class="team-member__info">
-      <h3 id="Chris-Keen">Chris Keen</h3>
+      <h3 id="Christopher-Keen">Christopher Keen</h3>
       <p class="role"><em>PhD student in BME</em></p>
       <div class="bio">
         <p>MRF</p>
