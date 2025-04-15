@@ -88,15 +88,15 @@ author_profile: true
 
 .member-content {
   display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 3rem;
+  grid-template-columns: 250px 1fr !important;
+  gap: 0 !important;
   align-items: start;
 }
 
 .left-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  width: 250px; /* Explicit width matching grid column */
+  padding: 1rem;
+  box-sizing: border-box; /* Prevent overflow */
 }
 
 .member-photo {
@@ -142,18 +142,19 @@ author_profile: true
 
   @media (max-width: 768px) {
   .member-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 2rem;
   }
   
   .left-column {
-    align-items: center;
+    width: 100% !important;
+    margin: 0 auto;
   }
   
   .member-photo {
-    height: 200px;
-    width: 200px;
-  }
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto;
   
   .member-info {
     text-align: center;
