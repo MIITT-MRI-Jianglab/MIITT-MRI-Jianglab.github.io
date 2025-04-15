@@ -150,6 +150,29 @@ classes: wide #uses theme's full-width class
   </div>
 
 
+   <!-- Team Member 3 -->
+  <div class="team-member">
+    <div class="team-member__left">
+      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+           alt="Chris Keen" 
+           class="team-member__photo">
+      <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    
+    <div class="team-member__info">
+      <h3 id="Chris-Keen">Chris Keen</h3>
+      <p class="role"><em>PhD student in BME</em></p>
+      <div class="bio">
+        <p>MRF</p>
+      </div>
+    </div>
+  </div>
+
+
 
 
 
