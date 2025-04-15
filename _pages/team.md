@@ -7,6 +7,35 @@ classes: wide #uses theme's full-width class
 
 ---
 <style>
+/* Theme Variables */
+:root {
+  --team-bg: #ffffff;
+  --team-text: #333333;
+  --team-shadow: rgba(0, 0, 0, 0.08);
+  --social-icon: #333333;
+  --social-hover: #0077b5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --team-bg: #1a1a1a;
+    --team-text: #e0e0e0;
+    --team-shadow: rgba(255, 255, 255, 0.08);
+    --social-icon: #909090;
+    --social-hover: #4dabf7;
+  }
+}
+
+/* If using theme toggle class instead of OS preference */
+.dark-theme {
+  --team-bg: #1a1a1a;
+  --team-text: #e0e0e0;
+  --team-shadow: rgba(255, 255, 255, 0.08);
+  --social-icon: #909090;
+  --social-hover: #4dabf7;
+}
+
+  
 .archive .team-container {
   display: grid !important;
   grid-template-columns: 1fr !important;
@@ -21,10 +50,15 @@ classes: wide #uses theme's full-width class
   grid-template-columns: 250px 1fr;
   gap: 3rem;
   padding: 2rem;
-  background: #fff;
+  background: var(--team-bg);
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  color: var(--team-text);
+  box-shadow: 0 5px 15px var(--team-shadow);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.role {
+  color: color-mix(in srgb, var(--team-text) 70%, transparent);
 }
 
 /* NEW: Grid hover effect */
@@ -57,7 +91,7 @@ classes: wide #uses theme's full-width class
 
 /* Enhanced Social Icon Hover Effects */
 .team-member__social a {
-  color: #333;
+  color: var(--social-icon);
   font-size: 1.5rem;
   margin: 0 0.8rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,7 +99,7 @@ classes: wide #uses theme's full-width class
 }
 
 .team-member__social a:hover {
-  color: #0077b5; /* LinkedIn blue */
+  color: var(--social-hover);
   transform: translateY(-3px) scale(1.15);
   text-shadow: 0 2px 8px rgba(0,119,181,0.2);
 }
