@@ -86,73 +86,78 @@ author_profile: true
   padding: 2rem;
 }
 
-.team-member {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-  transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-5px);
-}
-
 .member-content {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 2rem;
-  padding: 2rem;
+  grid-template-columns: 250px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .member-photo {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .member-info {
-  text-align: left;
+  padding-right: 2rem;
 }
 
 .role {
   color: #666;
   font-size: 1.1rem;
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
 }
 
 .bio {
   color: #444;
-  line-height: 1.6;
-  margin: 1.5rem 0;
-  max-width: 800px;
+  line-height: 1.7;
+  margin-top: 1rem;
 }
+
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: 1.5rem;
 }
 
 .social-links a {
   color: #333;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
+  transform: translateY(-3px);
   color: #0077b5; /* LinkedIn blue */
 }
 
   @media (max-width: 768px) {
   .member-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .left-column {
+    align-items: center;
   }
   
   .member-photo {
     height: 200px;
-    width: 100%;
+    width: 200px;
+  }
+  
+  .member-info {
+    text-align: center;
+    padding-right: 0;
   }
 }
 </style>
