@@ -1,6 +1,12 @@
+---
+layout: archive
+title: "Meet Our Team"
+permalink: /team/
+author_profile: true
+---
 
+{% include base_path %}
 
-# Meet Our Team
 
 
 ---
