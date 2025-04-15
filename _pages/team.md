@@ -7,6 +7,8 @@ author_profile: true
 | Photo | Name & Role | Bio | Social Links |
 |-------|-------------|-----|--------------|
 | ![John Doe](https://i.pravatar.cc/150?img=1) | **John Doe**<br>*CEO & Founder* | Visionary leader with 15+ years in tech innovation | [LinkedIn](#) • [Twitter](#) • [Email](#) |
+| ![Jane Smith](https://i.pravatar.cc/150?img=2) | **Jane Smith**<br>*CTO* | Full-stack developer specializing in scalable architectures | [GitHub](#) • [Medium](#) |
+| ![Mike Johnson](https://i.pravatar.cc/150?img=3) | **Mike Johnson**<br>*Marketing Director* | Digital marketing expert focused on growth strategies | [Instagram](#) • [Facebook](#) |
 ---
 
 ### Jiayao Yang 
