@@ -83,7 +83,7 @@ classes: wide #uses theme's full-width class
   <div class="team-member">
     <div class="team-member__left">
       <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
-           alt="John Doe" 
+           alt="Jiayao Yang" 
            class="team-member__photo">
       <div class="team-member__social">
         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -93,10 +93,10 @@ classes: wide #uses theme's full-width class
     </div>
     
     <div class="team-member__info">
-      <h3 id="john-doe">John Doe</h3>
-      <p class="role"><em>CEO & Founder</em></p>
+      <h3 id="Jiayao-Yang">Jiayao Yang</h3>
+      <p class="role"><em>PhD student in EECS</em></p>
       <div class="bio">
-        <p>Visionary leader with 15+ years of experience in tech innovation. Passionate about building sustainable technology solutions that make a positive social impact.</p>
+        <p>RF Pulse Design</p>
       </div>
     </div>
   </div>
