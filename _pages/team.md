@@ -1,8 +1,8 @@
 ---
-/*layout: archive*/
+layout: default
 title: "Meet Our Team"
 permalink: /team/
-/*author_profile: true*/
+author_profile: false
 
 ---
 
