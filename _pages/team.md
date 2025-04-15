@@ -5,9 +5,6 @@ permalink: /team/
 author_profile: true
 
 ---
-# Meet Our Team
-
-Our talented team driving innovation forward.
 
 <div class="team-container">
 
