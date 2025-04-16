@@ -224,7 +224,7 @@ classes: wide #uses theme's full-width class
   <!-- Team Member 6 -->
   <div class="team-member">
     <div class="team-member__left">
-      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+      <img src="{{ '/images/profile_Catherine.jpg' | relative_url }}" 
            alt="Catherine Liang" 
            class="team-member__photo">
       <div class="team-member__social">
