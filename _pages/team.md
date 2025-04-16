@@ -236,9 +236,9 @@ classes: wide #uses theme's full-width class
     
     <div class="team-member__info">
       <h3 id="Catherine-Liang">Catherine Liang</h3>
-      <p class="role"><em>Undergraduate student in BME</em></p>
+      <p class="role"><em>Undergraduate Student in Biomedical Engineering</em></p>
       <div class="bio">
-        <p>AI</p>
+        <p>Catherine is an undergraduate student majoring in Biomedical Engineering with a minor in Computer Science. Her current project involves investigating the effects that different dMRI preprocessing methods have on ADC map generation (specifically for prostate scans). In her free time, she enjoys playing video games, watching anime, and drawing.</p>
       </div>
     </div>
   </div>
