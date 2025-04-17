@@ -151,7 +151,7 @@ classes: wide #uses theme's full-width class
       <p class="role"><em>PhD student in EECS</em></p>
       <div class="team-member__social">
         <!-- <a href="#"><i class="fab fa-linkedin"></i></a>*/ -->
-        <a href="https://jyang000.github.io/"><i class="fab fa-globe"></i></a>
+        <a href="https://jyang000.github.io/"><i class="fab fa-link"></i></a>
         <a href="mailto:jiayao@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="bio">
