@@ -33,6 +33,12 @@ classes: wide #uses theme's full-width class
   transform: translateY(-5px);
   box-shadow: 0 12px 25px var(--global-border-color);
 }
+  .team-member__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; /* Match container radius */
+}
 .member-photo-container {
   width: 100px;
   height: 100px;
@@ -265,7 +271,7 @@ classes: wide #uses theme's full-width class
       <h3 id="Catherine-Liang">Catherine Liang</h3>
       <p class="role"><em>Undergraduate Student in Biomedical Engineering</em></p>
       <div class="team-member__social">
-       <a href="www.linkedin.com/in/catherine-liang-95406b208"><i class="fab fa-linkedin"></i></a>
+       <a href="https://www.linkedin.com/in/catherine-liang-95406b208"><i class="fab fa-linkedin"></i></a>
        <!-- <a href="#"><i class="fab fa-github"></i></a> -->
         <a href="mailto:catliang@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
