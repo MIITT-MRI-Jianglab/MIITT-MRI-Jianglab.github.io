@@ -174,7 +174,7 @@ classes: wide #uses theme's full-width class
       <h3 id="Hongze-Yu">Hongze Yu</h3>
       <p class="role"><em>PhD student in EECS</em></p>
       <div class="team-member__social">
-        <a href="[#](https://www.linkedin.com/in/hongze-yu-a2486721b/)"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/hongze-yu-a2486721b/"><i class="fab fa-linkedin"></i></a>
     <!--    <a href="https://hongzeyu0319.github.io/"><i class="fab fa-globe"></i></a>-->
        <a href="https://hongzeyu0319.github.io/"><i class="fab fa-link " aria-hidden="true"></i></a>
         <a href="https://github.com/hongzeyu0319"><i class="fab fa-github"></i></a>
