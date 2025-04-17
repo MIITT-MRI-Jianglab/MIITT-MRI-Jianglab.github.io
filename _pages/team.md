@@ -215,7 +215,7 @@ classes: wide #uses theme's full-width class
    <!-- Team Member 4 -->
   <div class="team-member">
     <div class="team-member__left">
-      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+      <img src="{{ '/images/Headshot_Tejinder.jpg' | relative_url }}" 
            alt="Tejinder Kaur" 
            class="team-member__photo">
      
@@ -225,12 +225,13 @@ classes: wide #uses theme's full-width class
       <h3 id="Tejinder-Kaur">Tejinder Kaur</h3>
       <p class="role"><em>Postdoctoral Research Fellow</em></p>
        <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+        <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+        <!-- <a href="#"><i class="fas fa-envelope"></i></a> -->
+        <a href="https://www.researchgate.net/profile/Tejinder-Kaur-28"><i class="fas fa-fw fa-link " aria-hidden="true"></i></a>
       </div>
       <div class="bio">
-        <p>Clinical Applications</p>
+        <p>I’m an MD in Radiodiagnosis and currently working as a postdoctoral clinical research fellow. My work focuses on MRI-guided interventions at mid-field and the use of MRI fingerprinting in prostate imaging. I’m particularly interested in advancing techniques in prostate imaging to improve diagnostic accuracy. Outside of work, I enjoy reading and playing table tennis.</p>
       </div>
     </div>
   </div>
