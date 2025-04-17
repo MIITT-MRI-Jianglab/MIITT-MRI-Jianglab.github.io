@@ -70,10 +70,12 @@ classes: wide #uses theme's full-width class
 
 .social-links {
   order: 3; 
- /*display: flex;*/
+ display: flex;
   gap: 1.2rem;
   margin-top: 1rem;
   justify-content: flex-start;
+    transition: all 0.3s ease; /* Add transition */
+
 }
 
 .social-links a {
@@ -84,16 +86,18 @@ classes: wide #uses theme's full-width class
 
 .social-links a:hover {
   transform: translateY(-3px);
+    opacity: 0.9; /* Added for better visual feedback */
+
 }
 
 /* Platform-specific hover colors */
-.social-links a[href*="linkedin.com"]:hover { color: #0077b5; }
-.social-links a[href*="github.com"]:hover { color: #181717; }
-/*.social-links a[href*="twitter.com"]:hover { color: #1da1f2; }*/
-/*.social-links a[href*="instagram.com"]:hover { color: #e1306c; }*/
-.social-links a[href*="mailto:"]:hover { color: #ea4335; }
-  /* Website/Globe */
-.social-links a:hover .fa-globe { color: #2ecc71; }
+.social-links a[href*="linkedin.com"]:hover { color: #0077b5 !important; }
+.social-links a[href*="github.com"]:hover { color: #181717 !important; }
+.social-links a[href*="mailto:"]:hover { color: #ea4335 !important; }
+.social-links a:hover .fa-globe { 
+  color: #34e68a !important; /* Brighter green on hover */
+  transform: scale(1.1); 
+}
 
 @media (max-width: 768px) {
   .team-member {
