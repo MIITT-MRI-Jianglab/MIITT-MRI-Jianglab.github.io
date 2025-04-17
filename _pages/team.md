@@ -154,7 +154,7 @@ classes: wide #uses theme's full-width class
    <!-- Team Member 2 -->
   <div class="team-member">
     <div class="team-member__left">
-      <img src="{{'/images/hongze_profile_image.jpg' | relative_url }}" 
+      <img src="{{'/images/hongze_profile_image.png' | relative_url }}" 
            alt="Hongze Yu" 
            class="team-member__photo">
       
