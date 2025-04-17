@@ -227,8 +227,8 @@ classes: wide #uses theme's full-width class
        <div class="team-member__social">
         <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
         <!-- <a href="#"><i class="fab fa-github"></i></a> -->
-        <!-- <a href="#"><i class="fas fa-envelope"></i></a> -->
         <a href="https://www.researchgate.net/profile/Tejinder-Kaur-28"><i class="fas fa-fw fa-link " aria-hidden="true"></i></a>
+        <a href="kaurte@med.umich.edu"><i class="fas fa-envelope"></i></a> 
       </div>
       <div class="bio">
         <p>I’m an MD in Radiodiagnosis and currently working as a postdoctoral clinical research fellow. My work focuses on MRI-guided interventions at mid-field and the use of MRI fingerprinting in prostate imaging. I’m particularly interested in advancing techniques in prostate imaging to improve diagnostic accuracy. Outside of work, I enjoy reading and playing table tennis.</p>
