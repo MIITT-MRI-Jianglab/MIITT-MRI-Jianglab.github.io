@@ -142,7 +142,7 @@ classes: wide #uses theme's full-width class
       <div class="team-member__social">
         <!-- <a href="#"><i class="fab fa-linkedin"></i></a>*/ -->
         <a href="https://jyang000.github.io/"><i class="fab fa-globe"></i></a>
-        <a href="jiayao@umich.edu"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:jiayao@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="bio">
         <p>I’m a PhD candidate in ECE, majoring in Signal & Image Processing and Machine Learning. I’m fortunate to be co-advised by Jon-Fredrik Nielsen and Yun Jiang. My current research explores new algorithms for multidimensional pulses design in magnetic resonance imaging (MRI) using optimization methods and their applications to reduced field-of-view imaging. I’m interested in developing new algorithms for MRI combining signal processing knowledge and machine learning. Outside of research, I enjoy drawing and painting.</p>
@@ -167,7 +167,7 @@ classes: wide #uses theme's full-width class
         <a href="[#](https://www.linkedin.com/in/hongze-yu-a2486721b/)"><i class="fab fa-linkedin"></i></a>
         <a href="https://hongzeyu0319.github.io/"><i class="fab fa-globe"></i></a>
         <a href="https://github.com/hongzeyu0319"><i class="fab fa-github"></i></a>
-        <a href="hongze@umich.edu"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:hongze@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="bio">
         <p>I’m a PhD candidate in Electrical and Computer Engineering, specializing in signal and image processing and machine learning. My current work focuses on accelerated MRI reconstruction using self‑supervised deep learning methods. I’m also interested in quantitative MRI, sampling‑trajectory optimization, and inverse problems more broadly. Outside of research, I enjoy cycling, tennis, and road trips.</p>
@@ -239,7 +239,7 @@ classes: wide #uses theme's full-width class
       <div class="team-member__social">
         <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
        <!-- <a href="#"><i class="fab fa-github"></i></a> -->
-        <a href="jaroszem@med.umich.edu"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:jaroszem@med.umich.edu"><i class="fas fa-envelope"></i></a>
          
       </div>
       <div class="bio">
