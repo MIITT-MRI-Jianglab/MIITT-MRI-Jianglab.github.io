@@ -57,6 +57,7 @@ classes: wide #uses theme's full-width class
   padding-right: 2rem;
   display: flex;
   flex-direction: column;
+  margin-bottom: 0rem;
 }
 
 .role {
