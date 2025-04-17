@@ -55,6 +55,8 @@ classes: wide #uses theme's full-width class
 
 .member-info {
   padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .role {
@@ -62,13 +64,15 @@ classes: wide #uses theme's full-width class
   font-size: 1.1rem;
   margin: 0.8rem 0;
   font-style: italic;
+   margin-bottom: 1rem; /* Space between role and social links */
 }
 
 .social-links {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-  justify-content: center;
+  order: 3; 
+ /*display: flex;*/
+  gap: 1.2rem;
+  margin-top: 1rem;
+  justify-content: flex-start;
 }
 
 .social-links a {
@@ -126,16 +130,17 @@ classes: wide #uses theme's full-width class
       <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
            alt="Jiayao Yang" 
            class="team-member__photo">
-      <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
-      </div>
+      
     </div>
     
     <div class="team-member__info">
       <h3 id="Jiayao-Yang">Jiayao Yang</h3>
       <p class="role"><em>PhD student in EECS</em></p>
+      <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
       <div class="bio">
         <p>RF Pulse Design</p>
       </div>
@@ -149,16 +154,17 @@ classes: wide #uses theme's full-width class
       <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
            alt="Hong Yu" 
            class="team-member__photo">
-      <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
-      </div>
+      
     </div>
     
     <div class="team-member__info">
       <h3 id="Hongze-Yu">Hongze Yu</h3>
       <p class="role"><em>PhD student in EECS</em></p>
+      <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
       <div class="bio">
         <p>DL/ML</p>
       </div>
@@ -172,16 +178,17 @@ classes: wide #uses theme's full-width class
       <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
            alt="Christopher Keen" 
            class="team-member__photo">
-      <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
-      </div>
+     
     </div>
     
     <div class="team-member__info">
       <h3 id="Christopher-Keen">Christopher Keen</h3>
       <p class="role"><em>PhD student in BME</em></p>
+       <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
       <div class="bio">
         <p>MRF</p>
       </div>
@@ -195,16 +202,17 @@ classes: wide #uses theme's full-width class
       <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
            alt="Tejinder Kaur" 
            class="team-member__photo">
-      <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
-      </div>
+     
     </div>
     
     <div class="team-member__info">
       <h3 id="Tejinder-Kaur">Tejinder Kaur</h3>
       <p class="role"><em>Postdoctoral Research Fellow</em></p>
+       <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
       <div class="bio">
         <p>Clinical Applications</p>
       </div>
@@ -218,16 +226,17 @@ classes: wide #uses theme's full-width class
       <img src="{{ '/images/mike_profile.jpg' | relative_url }}" 
            alt="Michael Jaroszewicz" 
            class="team-member__photo">
-      <div class="team-member__social">
-        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
-       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
-        <a href="jaroszem@med.umich.edu"><i class="fas fa-envelope"></i></a>
+      
       </div>
     </div>
     
     <div class="team-member__info">
       <h3 id="Michael-Jaroszewicz">Michael Jaroszewicz</h3>
       <p class="role"><em>Postdoctoral Research Fellow</em></p>
+      <div class="team-member__social">
+        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+        <a href="jaroszem@med.umich.edu"><i class="fas fa-envelope"></i></a>
       <div class="bio">
         <p>I'm an NMR spectroscopist by training, with a background in developing pulse sequences to address sensitivity and resolution challenges in solid- and solution-state NMR. My current work focuses on applying similar principles to quantitative MRI, particularly in developing techniques for diffusion and T2 mapping to better study disease. This includes designing specialized RF pulse sequences and creating strategies for robust and efficient data acquisition. Outside of research, I am passionate about cooking and especially enjoy preparing dishes from various cuisines I've encountered while traveling and studying abroad.</p>
       </div>
@@ -240,16 +249,17 @@ classes: wide #uses theme's full-width class
       <img src="{{ '/images/profile_Catherine.jpg' | relative_url }}" 
            alt="Catherine Liang" 
            class="team-member__photo">
-      <div class="team-member__social">
-       <a href="www.linkedin.com/in/catherine-liang-95406b208"><i class="fab fa-linkedin"></i></a>
-       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
-        <a href="catliang@umich.edu"><i class="fas fa-envelope"></i></a>
-      </div>
+      
     </div>
     
     <div class="team-member__info">
       <h3 id="Catherine-Liang">Catherine Liang</h3>
       <p class="role"><em>Undergraduate Student in Biomedical Engineering</em></p>
+      <div class="team-member__social">
+       <a href="www.linkedin.com/in/catherine-liang-95406b208"><i class="fab fa-linkedin"></i></a>
+       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+        <a href="catliang@umich.edu"><i class="fas fa-envelope"></i></a>
+      </div>
       <div class="bio">
         <p>Catherine is an undergraduate student majoring in Biomedical Engineering with a minor in Computer Science. Her current project involves investigating the effects that different dMRI preprocessing methods have on ADC map generation (specifically for prostate scans). In her free time, she enjoys playing video games, watching anime, and drawing.</p>
       </div>
