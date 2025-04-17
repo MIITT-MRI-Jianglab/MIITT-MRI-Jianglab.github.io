@@ -64,7 +64,7 @@ classes: wide #uses theme's full-width class
   font-size: 1.1rem;
   margin: 0.8rem 0;
   font-style: italic;
-   margin-bottom: 1rem; /* Space between role and social links */
+   margin-bottom: 0rem; /* Space between role and social links */
 }
 
 .social-links {
