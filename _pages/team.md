@@ -202,7 +202,7 @@ classes: wide #uses theme's full-width class
    <!-- Team Member 5 -->
   <div class="team-member">
     <div class="team-member__left">
-      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+      <img src="{{ '/images/mike_profile.jpg' | relative_url }}" 
            alt="Michael Jaroszewicz" 
            class="team-member__photo">
       <div class="team-member__social">
@@ -216,7 +216,7 @@ classes: wide #uses theme's full-width class
       <h3 id="Michael-Jaroszewicz">Michael Jaroszewicz</h3>
       <p class="role"><em>Postdoctoral Research Fellow</em></p>
       <div class="bio">
-        <p>Diffusion</p>
+        <p>I'm an NMR spectroscopist by training, with a background in developing pulse sequences to address sensitivity and resolution challenges in solid- and solution-state NMR. My current work focuses on applying similar principles to quantitative MRI, particularly in developing techniques for diffusion and T2 mapping to better study disease. This includes designing specialized RF pulse sequences and creating strategies for robust and efficient data acquisition. Outside of research, I am passionate about cooking and especially enjoy preparing dishes from various cuisines I've encountered while traveling and studying abroad.</p>
       </div>
     </div>
   </div>
