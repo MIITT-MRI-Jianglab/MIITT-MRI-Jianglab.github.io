@@ -139,7 +139,7 @@ classes: wide #uses theme's full-width class
       <p class="role"><em>PhD student in EECS</em></p>
       <div class="team-member__social">
         <!-- <a href="#"><i class="fab fa-linkedin"></i></a>*/ -->
-        <a href="https://jyang000.github.io/"><i class="fab fa-github"></i></a>
+        <a href="https://jyang000.github.io/"><i class="fab fa-globe"></i></a>
         <a href="jiayao@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="bio">
@@ -163,7 +163,8 @@ classes: wide #uses theme's full-width class
       <p class="role"><em>PhD student in EECS</em></p>
       <div class="team-member__social">
         <a href="[#](https://www.linkedin.com/in/hongze-yu-a2486721b/)"><i class="fab fa-linkedin"></i></a>
-        <a href="https://hongzeyu0319.github.io/"><i class="fab fa-github"></i></a>
+        <a href="https://hongzeyu0319.github.io/"><i class="fab fa-globe"></i></a>
+        <a href="https://github.com/hongzeyu0319"><i class="fab fa-github"></i></a>
         <a href="hongze@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="bio">
