@@ -177,7 +177,6 @@ classes: wide #uses theme's full-width class
         <a href="[#](https://www.linkedin.com/in/hongze-yu-a2486721b/)"><i class="fab fa-linkedin"></i></a>
     <!--    <a href="https://hongzeyu0319.github.io/"><i class="fab fa-globe"></i></a>-->
        <a href="https://hongzeyu0319.github.io/"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i></a>
-
         <a href="https://github.com/hongzeyu0319"><i class="fab fa-github"></i></a>
         <a href="mailto:hongze@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
