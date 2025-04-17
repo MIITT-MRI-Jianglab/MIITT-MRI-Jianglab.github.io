@@ -226,8 +226,7 @@ classes: wide #uses theme's full-width class
       <img src="{{ '/images/mike_profile.jpg' | relative_url }}" 
            alt="Michael Jaroszewicz" 
            class="team-member__photo">
-      
-      </div>
+     
     </div>
     
     <div class="team-member__info">
@@ -237,6 +236,8 @@ classes: wide #uses theme's full-width class
         <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
        <!-- <a href="#"><i class="fab fa-github"></i></a> -->
         <a href="jaroszem@med.umich.edu"><i class="fas fa-envelope"></i></a>
+         
+      </div>
       <div class="bio">
         <p>I'm an NMR spectroscopist by training, with a background in developing pulse sequences to address sensitivity and resolution challenges in solid- and solution-state NMR. My current work focuses on applying similar principles to quantitative MRI, particularly in developing techniques for diffusion and T2 mapping to better study disease. This includes designing specialized RF pulse sequences and creating strategies for robust and efficient data acquisition. Outside of research, I am passionate about cooking and especially enjoy preparing dishes from various cuisines I've encountered while traveling and studying abroad.</p>
       </div>
