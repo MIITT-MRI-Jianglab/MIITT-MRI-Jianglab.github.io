@@ -263,7 +263,7 @@ classes: wide #uses theme's full-width class
       <div class="team-member__social">
        <a href="www.linkedin.com/in/catherine-liang-95406b208"><i class="fab fa-linkedin"></i></a>
        <!-- <a href="#"><i class="fab fa-github"></i></a> -->
-        <a href="catliang@umich.edu"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:catliang@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="bio">
         <p>Catherine is an undergraduate student majoring in Biomedical Engineering with a minor in Computer Science. Her current project involves investigating the effects that different dMRI preprocessing methods have on ADC map generation (specifically for prostate scans). In her free time, she enjoys playing video games, watching anime, and drawing.</p>
