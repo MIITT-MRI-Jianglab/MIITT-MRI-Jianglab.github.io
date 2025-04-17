@@ -206,9 +206,9 @@ classes: wide #uses theme's full-width class
            alt="Michael Jaroszewicz" 
            class="team-member__photo">
       <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+        <a href="jaroszem@med.umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
     
@@ -228,9 +228,9 @@ classes: wide #uses theme's full-width class
            alt="Catherine Liang" 
            class="team-member__photo">
       <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+       <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+        <a href="catliang@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
     
