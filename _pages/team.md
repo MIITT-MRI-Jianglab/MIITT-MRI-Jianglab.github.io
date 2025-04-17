@@ -128,7 +128,7 @@ classes: wide #uses theme's full-width class
   <!-- Team Member 1 -->
   <div class="team-member">
     <div class="team-member__left">
-      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+      <img src="{{ '/images/jiayao-24-p.jpg' | relative_url }}" 
            alt="Jiayao Yang" 
            class="team-member__photo">
       
@@ -138,12 +138,12 @@ classes: wide #uses theme's full-width class
       <h3 id="Jiayao-Yang">Jiayao Yang</h3>
       <p class="role"><em>PhD student in EECS</em></p>
       <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        /*<a href="#"><i class="fab fa-linkedin"></i></a>*/
+        <a href="https://jyang000.github.io/"><i class="fab fa-github"></i></a>
+        <a href="jiayao@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="bio">
-        <p>RF Pulse Design</p>
+        <p>I’m a PhD candidate in ECE, majoring in Signal & Image Processing and Machine Learning. I’m fortunate to be co-advised by Jon-Fredrik Nielsen and Yun Jiang. My current research explores new algorithms for multidimensional pulses design in magnetic resonance imaging (MRI) using optimization methods and their applications to reduced field-of-view imaging. I’m interested in developing new algorithms for MRI combining signal processing knowledge and machine learning. Outside of research, I enjoy drawing and painting.</p>
       </div>
     </div>
   </div>
@@ -152,8 +152,8 @@ classes: wide #uses theme's full-width class
    <!-- Team Member 2 -->
   <div class="team-member">
     <div class="team-member__left">
-      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
-           alt="Hong Yu" 
+      <img src="{{ '/images/hongze_profile_image.jpg' | relative_url }}" 
+           alt="Hongze Yu" 
            class="team-member__photo">
       
     </div>
@@ -162,12 +162,12 @@ classes: wide #uses theme's full-width class
       <h3 id="Hongze-Yu">Hongze Yu</h3>
       <p class="role"><em>PhD student in EECS</em></p>
       <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="[#](https://www.linkedin.com/in/hongze-yu-a2486721b/)"><i class="fab fa-linkedin"></i></a>
+        <a href="https://hongzeyu0319.github.io/"><i class="fab fa-github"></i></a>
+        <a href="hongze@umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="bio">
-        <p>DL/ML</p>
+        <p>I’m a PhD candidate in Electrical and Computer Engineering, specializing in signal and image processing and machine learning. My current work focuses on accelerated MRI reconstruction using self‑supervised deep learning methods. I’m also interested in quantitative MRI, sampling‑trajectory optimization, and inverse problems more broadly. Outside of research, I enjoy cycling, tennis, and road trips.</p>
       </div>
     </div>
   </div>
