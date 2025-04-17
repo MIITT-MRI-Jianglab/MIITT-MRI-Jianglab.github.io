@@ -34,8 +34,8 @@ classes: wide #uses theme's full-width class
   box-shadow: 0 12px 25px var(--global-border-color);
 }
 .member-photo-container {
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
   overflow: hidden;
   margin: 0 auto;
@@ -95,13 +95,13 @@ classes: wide #uses theme's full-width class
     gap: 2rem;
   }
   .member-photo-container {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
   
   .member-photo {
-    height: 200px;
-    width: 200px;
+    width: 100%;
+    height: 100%;
     aspect-ratio: 1/1; /* Force square */
     object-fit: cover; /* Crop to fill */
     margin: 0 auto;
