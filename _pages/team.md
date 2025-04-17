@@ -33,12 +33,19 @@ classes: wide #uses theme's full-width class
   transform: translateY(-5px);
   box-shadow: 0 12px 25px var(--global-border-color);
 }
+.member-photo-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
 
 .member-photo {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  aspect-ratio: 1/1;
   transition: transform 0.3s ease;
 }
 
@@ -87,10 +94,16 @@ classes: wide #uses theme's full-width class
     text-align: center;
     gap: 2rem;
   }
+  .member-photo-container {
+    width: 200px;
+    height: 200px;
+  }
   
   .member-photo {
     height: 200px;
     width: 200px;
+    aspect-ratio: 1/1; /* Force square */
+    object-fit: cover; /* Crop to fill */
     margin: 0 auto;
   }
   
