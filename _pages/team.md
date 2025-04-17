@@ -62,8 +62,8 @@ classes: wide #uses theme's full-width class
 
 .role {
   color: var(--global-text-color);
-  font-size: 0.0rem;
-  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  margin: 0rem 0;
   font-style: italic;
    margin-bottom: 0rem; /* Space between role and social links */
 }
