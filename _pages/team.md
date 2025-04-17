@@ -91,7 +91,7 @@ classes: wide #uses theme's full-width class
 .social-links a[href*="github.com"]:hover { color: #181717; }
 /*.social-links a[href*="twitter.com"]:hover { color: #1da1f2; }*/
 /*.social-links a[href*="instagram.com"]:hover { color: #e1306c; }*/
-.social-links a[href^="mailto:"]:hover { color: #ea4335; }
+.social-links a[href*="mailto:"]:hover { color: #ea4335; }
   /* Website/Globe */
 .social-links a:hover .fa-globe { color: #2ecc71; }
 
