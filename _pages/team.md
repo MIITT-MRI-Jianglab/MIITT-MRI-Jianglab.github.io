@@ -345,9 +345,9 @@ classes: wide #uses theme's full-width class
       <div class="alumni-details">
         <div>Postdoc (2019-2021)</div>
         <div>Now: Assistant Professor at ABC University</div>
-        <div class="social-links" style="margin-top: 0.8rem;">
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fas fa-envelope"></i></a>
+        <!-- <div class="social-links" style="margin-top: 0.8rem;"> -->
+        <!--  <a href="#"><i class="fab fa-linkedin"></i></a> -->
+        <!--  <a href="#"><i class="fas fa-envelope"></i></a> -->
         </div>
       </div>
     </div>
