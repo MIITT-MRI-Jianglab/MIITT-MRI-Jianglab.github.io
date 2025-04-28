@@ -33,55 +33,48 @@ classes: wide #uses theme's full-width class
   transform: translateY(-5px);
   box-shadow: 0 12px 25px var(--global-border-color);
 }
-  .team-member__photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px; /* Match container radius */
-}
-.member-photo-container {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
+
+
+/* ===== PHOTO STYLES ===== */
+.team-member__photo-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
   overflow: hidden;
   margin: 0 auto;
 }
 
-.member-photo {
+.team-member__photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 1/1;
   transition: transform 0.3s ease;
 }
 
-.team-member:hover .member-photo {
+.team-member:hover .team-member__photo {
   transform: scale(1.02);
 }
-
-.member-info {
+  
+  
+/* ===== INFO SECTION ===== */
+.team-member__info {
   padding-right: 2rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 0rem;
 }
 
 .role {
   color: var(--global-text-color);
   font-size: 0.9rem;
-  margin: 0rem 0;
+  margin: 0.5rem 0;
   font-style: italic;
-   margin-bottom: 0rem; /* Space between role and social links */
 }
 
+/* ===== SOCIAL LINKS ===== */
 .social-links {
-  order: 3; 
- display: flex;
+  display: flex;
   gap: 1.2rem;
   margin-top: 1rem;
-  justify-content: flex-start;
-    transition: all 0.3s ease; /* Add transition */
-
 }
 
 .social-links a {
@@ -92,82 +85,81 @@ classes: wide #uses theme's full-width class
 
 .social-links a:hover {
   transform: translateY(-3px);
-    opacity: 0.9; /* Added for better visual feedback */
+  opacity: 0.9; /* Added for better visual feedback */
 
 }
+
+/* Platform-specific hover colors */
+.social-links a[href*="linkedin.com"]:hover { color: #0077b5 !important; }
+.social-links a[href*="github.com"]:hover { color: #181717 !important; }
+.social-links a[href*="mailto:"]:hover { color: #ea4335 !important; }
+.social-links a[href*="://"]:hover .fa-link { color: #34e68a !important; }
 
 /* Alumni Styles */
+.alumni-section {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 2px solid var(--global-border-color);
+}
+
 .alumni-member {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping */
-  gap: 0.5rem 1.5rem; /* Horizontal and vertical gaps */
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
-.alumni-bio {
-  width: 100%; /* Force new line */
-  margin-top: 0.5rem;
-  padding-top: 0.5rem;
-  border-top: 1px solid var(--global-border-color);
-}
-
-/* Keep name/role on same line */
 .alumni-name-role {
   display: flex;
   gap: 1rem;
   align-items: baseline;
 }
 
-  
-
-/* Platform-specific hover colors */
-.social-links a[href*="linkedin.com"]:hover { color: #0077b5 !important; }
-.social-links a[href*="github.com"]:hover { color: #181717 !important; }
-.social-links a[href*="mailto:"]:hover { color: #ea4335 !important; }
-.social-links a:hover .fa-globe { 
-  color: #34e68a !important; /* Brighter green on hover */
-  transform: scale(1.1); 
+.alumni-name {
+  font-weight: 600;
+  color: var(--global-text-color);
 }
 
+.alumni-role {
+  color: var(--global-text-color);
+  font-size: 0.9em;
+}
 
+.alumni-bio {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  color: var(--global-text-color);
+  border-top: 1px solid var(--global-border-color);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .team-member {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
   }
-  .member-photo-container {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .member-photo {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1; /* Force square */
-    object-fit: cover; /* Crop to fill */
-    margin: 0 auto;
-  }
-  
-  .member-info {
-    padding-right: 0;
+
+  .team-member__photo-container {
+    width: 200px;
+    height: 200px;
   }
 
-   .alumni-member {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 0.1rem 0;
-  }
-  
-  .alumni-name, 
-  .alumni-role {
-    min-width: auto;
-    width: 100%;
-  }
-
-  
   .social-links {
     justify-content: center;
   }
+
+  .alumni-member {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .alumni-name-role {
+    flex-direction: column;
+    align-items: center;
+  } 
 }
 </style>
 
@@ -176,21 +168,25 @@ classes: wide #uses theme's full-width class
 
   <!-- Team Member 1 -->
   <div class="team-member">
-    <div class="team-member__left">
+    <div class="team-member__photo-container">
       <img src="{{ '/images/jiayao-24-p.jpg' | relative_url }}" 
-           alt="Jiayao Yang" 
+           alt="Jiayao Yang - PhD Student in EECS" 
            class="team-member__photo">
       
     </div>
     
     <div class="team-member__info">
       <h3 id="Jiayao-Yang">Jiayao Yang</h3>
-      <p class="role"><em>PhD student in EECS</em></p>
-      <div class="team-member__social">
+      <p class="role"><em>PhD Student in EECS</em></p>
+      <div class="social-links">
         <!-- <a href="#"><i class="fab fa-linkedin"></i></a>*/ -->
         <!-- <a href="https://jyang000.github.io/"><i class="fab fa-link"></i></a> -->
-        <a href="https://jyang000.github.io/"><i class="fas fa-fw fa-link " aria-hidden="true"></i></a>
-        <a href="mailto:jiayao@umich.edu"><i class="fas fa-envelope"></i></a>
+    <a href="https://jyang000.github.io/" aria-label="Personal website">
+          <i class="fas fa-link"></i>
+        </a>
+        <a href="mailto:jiayao@umich.edu" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
       <div class="bio">
         <p>I’m a PhD candidate in ECE, majoring in Signal & Image Processing and Machine Learning. I’m fortunate to be co-advised by Jon-Fredrik Nielsen and Yun Jiang. My current research explores new algorithms for multidimensional pulses design in magnetic resonance imaging (MRI) using optimization methods and their applications to reduced field-of-view imaging. I’m interested in developing new algorithms for MRI combining signal processing knowledge and machine learning. Outside of research, I enjoy drawing and painting.</p>
@@ -200,23 +196,28 @@ classes: wide #uses theme's full-width class
 
 
    <!-- Team Member 2 -->
-  <div class="team-member">
-    <div class="team-member__left">
-      <img src="{{'/images/hongze_profile_image.png' | relative_url }}" 
-           alt="Hongze Yu" 
+   <div class="team-member">
+    <div class="team-member__photo-container">
+      <img src="{{ '/images/hongze_profile_image.png' | relative_url }}" 
+           alt="Hongze Yu - PhD student in EECS" 
            class="team-member__photo">
-      
     </div>
-    
     <div class="team-member__info">
       <h3 id="Hongze-Yu">Hongze Yu</h3>
       <p class="role"><em>PhD student in EECS</em></p>
-      <div class="team-member__social">
-        <a href="https://www.linkedin.com/in/hongze-yu-a2486721b/"><i class="fab fa-linkedin"></i></a>
-    <!--    <a href="https://hongzeyu0319.github.io/"><i class="fab fa-globe"></i></a>-->
-       <a href="https://hongzeyu0319.github.io/"><i class="fas fa-fw fa-link " aria-hidden="true"></i></a>
-        <a href="https://github.com/hongzeyu0319"><i class="fab fa-github"></i></a>
-        <a href="mailto:hongze@umich.edu"><i class="fas fa-envelope"></i></a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/hongze-yu-a2486721b/" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://hongzeyu0319.github.io/" aria-label="Personal website">
+          <i class="fas fa-link"></i>
+        </a>
+        <a href="https://github.com/hongzeyu0319" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:hongze@umich.edu" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
       <div class="bio">
         <p>I’m a PhD candidate in Electrical and Computer Engineering, specializing in signal and image processing and machine learning. My current work focuses on accelerated MRI reconstruction using self‑supervised deep learning methods. I’m also interested in quantitative MRI, sampling‑trajectory optimization, and inverse problems more broadly. Outside of research, I enjoy cycling, tennis, and road trips.</p>
@@ -224,23 +225,19 @@ classes: wide #uses theme's full-width class
     </div>
   </div>
 
-
-   <!-- Team Member 3 -->
   <div class="team-member">
-    <div class="team-member__left">
+    <div class="team-member__photo-container">
       <img src="{{ '/images/chris_profile.jpg' | relative_url }}" 
-           alt="Christopher Keen" 
+           alt="Christopher Keen - PhD student in BME" 
            class="team-member__photo">
-     
     </div>
-    
     <div class="team-member__info">
       <h3 id="Christopher-Keen">Christopher Keen</h3>
       <p class="role"><em>PhD student in BME</em></p>
-       <div class="team-member__social">
-       <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
-       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
-        <a href="mailto:cekeen@med.umich.edu"><i class="fas fa-envelope"></i></a>
+      <div class="social-links">
+        <a href="mailto:cekeen@med.umich.edu" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
       <div class="bio">
         <p>I’m a PhD student in Biomedical engineering, specializing in magnetic resonance fingerprinting (MRF). My work is focussed on improving the accuracy and quality MRF T1 and T2 maps and applying this technology to the diagnosis and management of abdominal and pelvic cancers. This includes MRF pulse sequence optimization and application in the prostate at 0.55T to improve MRI-guided biopsy procedures. When I’m not in the lab, I enjoy escaping the city to go camping, hiking, and skiing in the mountains.</p>
@@ -248,24 +245,22 @@ classes: wide #uses theme's full-width class
     </div>
   </div>
 
-
-   <!-- Team Member 4 -->
   <div class="team-member">
-    <div class="team-member__left">
+    <div class="team-member__photo-container">
       <img src="{{ '/images/Headshot_Tejinder.jpg' | relative_url }}" 
-           alt="Tejinder Kaur" 
+           alt="Tejinder Kaur - Postdoctoral Research Fellow" 
            class="team-member__photo">
-     
     </div>
-    
     <div class="team-member__info">
       <h3 id="Tejinder-Kaur">Tejinder Kaur</h3>
       <p class="role"><em>Postdoctoral Research Fellow</em></p>
-       <div class="team-member__social">
-        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
-        <!-- <a href="#"><i class="fab fa-github"></i></a> -->
-        <a href="https://www.researchgate.net/profile/Tejinder-Kaur-28"><i class="fas fa-fw fa-link " aria-hidden="true"></i></a>
-        <a href="mailto:kaurte@med.umich.edu"><i class="fas fa-envelope"></i></a> 
+      <div class="social-links">
+        <a href="https://www.researchgate.net/profile/Tejinder-Kaur-28" aria-label="ResearchGate">
+          <i class="fas fa-link"></i>
+        </a>
+        <a href="mailto:kaurte@med.umich.edu" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
       <div class="bio">
         <p>I’m an MD in Radiodiagnosis and currently working as a postdoctoral clinical research fellow. My work focuses on MRI-guided interventions at mid-field and the use of MRI fingerprinting in prostate imaging. I’m particularly interested in advancing techniques in prostate imaging to improve diagnostic accuracy. Outside of work, I enjoy reading and playing table tennis.</p>
@@ -273,24 +268,19 @@ classes: wide #uses theme's full-width class
     </div>
   </div>
 
-
-   <!-- Team Member 5 -->
   <div class="team-member">
-    <div class="team-member__left">
+    <div class="team-member__photo-container">
       <img src="{{ '/images/mike_profile.jpg' | relative_url }}" 
-           alt="Michael Jaroszewicz" 
+           alt="Michael Jaroszewicz - Postdoctoral Research Fellow" 
            class="team-member__photo">
-     
     </div>
-    
     <div class="team-member__info">
       <h3 id="Michael-Jaroszewicz">Michael Jaroszewicz</h3>
       <p class="role"><em>Postdoctoral Research Fellow</em></p>
-      <div class="team-member__social">
-        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
-       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
-        <a href="mailto:jaroszem@med.umich.edu"><i class="fas fa-envelope"></i></a>
-         
+      <div class="social-links">
+        <a href="mailto:jaroszem@med.umich.edu" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
       <div class="bio">
         <p>I'm an NMR spectroscopist by training, with a background in developing pulse sequences to address sensitivity and resolution challenges in solid- and solution-state NMR. My current work focuses on applying similar principles to quantitative MRI, particularly in developing techniques for diffusion and T2 mapping to better study disease. This includes designing specialized RF pulse sequences and creating strategies for robust and efficient data acquisition. Outside of research, I am passionate about cooking and especially enjoy preparing dishes from various cuisines I've encountered while traveling and studying abroad.</p>
@@ -298,56 +288,57 @@ classes: wide #uses theme's full-width class
     </div>
   </div>
 
-  <!-- Team Member 6 -->
   <div class="team-member">
-    <div class="team-member__left">
+    <div class="team-member__photo-container">
       <img src="{{ '/images/profile_Catherine.jpg' | relative_url }}" 
-           alt="Catherine Liang" 
+           alt="Catherine Liang - Undergraduate Student" 
            class="team-member__photo">
-      
     </div>
-    
     <div class="team-member__info">
       <h3 id="Catherine-Liang">Catherine Liang</h3>
       <p class="role"><em>Undergraduate Student in Biomedical Engineering</em></p>
-      <div class="team-member__social">
-       <a href="https://www.linkedin.com/in/catherine-liang-95406b208"><i class="fab fa-linkedin"></i></a>
-       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
-        <a href="mailto:catliang@umich.edu"><i class="fas fa-envelope"></i></a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/catherine-liang-95406b208" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:catliang@umich.edu" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
       <div class="bio">
         <p>Catherine is an undergraduate student majoring in Biomedical Engineering with a minor in Computer Science. Her current project involves investigating the effects that different dMRI preprocessing methods have on ADC map generation (specifically for prostate scans). In her free time, she enjoys playing video games, watching anime, and drawing.</p>
       </div>
     </div>
   </div>
-<!-- Add this inside team-container after current members -->
-<h2 class="alumni-heading" style="grid-column: 1/-1; margin: 4rem 0 1rem;">Lab Alumni</h2>
 
-<div class="alumni-member">
-    <div class="alumni-name-role">
-      <div class="alumni-name">Jesus Fajardo</div>
-      <div class="alumni-role">Postdoctoral Research Fellow (2022-2024)</div>
+  <!-- Alumni Section -->
+  <div class="alumni-section">
+    <h2>Lab Alumni</h2>
+    
+    <div class="alumni-member">
+      <div class="alumni-name-role">
+        <div class="alumni-name">Jesus Fajardo</div>
+        <div class="alumni-role">Postdoctoral Research Fellow (2022-2024)</div>
+      </div>
+      <div class="alumni-bio">Now Research Scientist at Wayne State University</div>
     </div>
-  <div class="alumni-bio">Now Research Scientist at Wayne State University</div>
-</div>
 
-<div class="alumni-member">
-  <div class="alumni-name-role">
-    <div class="alumni-name">Jack Andrews</div>
-    <div class="alumni-role">Master's Student in BME (2022-2023)</div>
+    <div class="alumni-member">
+      <div class="alumni-name-role">
+        <div class="alumni-name">Jack Andrews</div>
+        <div class="alumni-role">Master's Student in BME (2022-2023)</div>
+      </div>
+      <div class="alumni-bio">Now Software Engineer at Delphinus Medical Technologies</div>
+    </div>
+
+    <div class="alumni-member">
+      <div class="alumni-name-role">
+        <div class="alumni-name">Matthew Zhu</div>
+        <div class="alumni-role">Master's Student in EECS (2020-2022)</div>
+      </div>
+      <div class="alumni-bio">Now Research Scientist at Western Digital</div>
+    </div>
   </div>
-  <div class="alumni-bio">Now Software Engineer at Delphinus Medical Technologies</div>
 </div>
 
-<div class="alumni-member">
-  <div class="alumni-name-role">
-    <div class="alumni-name">Matthew Zhu</div>
-    <div class="alumni-role">Master's Student in EECS (2020-2022)</div>
-  </div>
-  <div class="alumni-bio">Now Research Scientist at Western Digital</div>
-</div>
-
-
-<!-- Add Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
----
