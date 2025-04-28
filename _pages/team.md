@@ -138,6 +138,7 @@ classes: wide
 .alumni-role {
   color: var(--global-text-color);
   font-size: 0.9rem;
+  font-style: italic;
 }
 
 .alumni-bio {
