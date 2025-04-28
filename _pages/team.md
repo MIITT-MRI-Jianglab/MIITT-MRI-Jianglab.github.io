@@ -198,7 +198,7 @@ classes: wide
     </div>
     <div class="team-member__info">
       <h3 id="Jiayao-Yang">Jiayao Yang</h3>
-      <p class="role"><em>PhD student in EECS</em></p>
+      <p class="role"><em>PhD Student in Electrial and Computer Engineering</em></p>
       <div class="social-links">
         <a href="https://jyang000.github.io/" aria-label="Personal website">
           <i class="fas fa-link"></i>
@@ -222,7 +222,7 @@ classes: wide
     </div>
     <div class="team-member__info">
       <h3 id="Hongze-Yu">Hongze Yu</h3>
-      <p class="role"><em>PhD student in EECS</em></p>
+      <p class="role"><em>PhD Student in Electrial and Computer Engineering</em></p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/hongze-yu-a2486721b/" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
@@ -247,12 +247,12 @@ classes: wide
   <div class="team-member">
     <div class="team-member__photo-container">
       <img src="{{ '/images/chris_profile.jpg' | relative_url }}" 
-           alt="Christopher Keen - PhD student in BME" 
+           alt="Christopher Keen - PhD student in Biomedical Engineering" 
            class="team-member__photo">
     </div>
     <div class="team-member__info">
       <h3 id="Christopher-Keen">Christopher Keen</h3>
-      <p class="role"><em>PhD student in BME</em></p>
+      <p class="role"><em>PhD Student in Biomedical Engineering</em></p>
       <div class="social-links">
         <a href="mailto:cekeen@med.umich.edu" aria-label="Email">
           <i class="fas fa-envelope"></i>
