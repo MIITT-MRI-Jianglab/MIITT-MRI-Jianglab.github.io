@@ -100,10 +100,11 @@ classes: wide #uses theme's full-width class
 .alumni-member {
   display: flex;
   align-items: baseline;
-  gap: 0.5rem;
+  gap: 0.3rem;
   padding: 0.5rem;
-  margin: 0.5rem 0;
+  margin: 0.1rem 0.1rem;
   border-radius: 8px;
+  margin-bottom: 0.1rem; /* Adjust this value */
   background: var(--global-bg-color);
   color: var(--global-text-color);
 }
@@ -162,6 +163,7 @@ classes: wide #uses theme's full-width class
    .alumni-member {
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin: 0.1rem 0;
   }
   
   .alumni-name, 
