@@ -114,27 +114,14 @@ classes: wide #uses theme's full-width class
 }
 
 .alumni-role {
-  color: #666;
+  color: var(--global-text-color;
   font-style: italic;
   min-width: 200px;
 }
 
 .alumni-bio {
-  color: #444;
+  color: var(--global-text-color;
   flex-grow: 1;
-}
-
-@media (max-width: 768px) {
-  .alumni-member {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
-  .alumni-name, 
-  .alumni-role {
-    min-width: auto;
-    width: 100%;
-  }
 }
 
   
@@ -170,6 +157,17 @@ classes: wide #uses theme's full-width class
   
   .member-info {
     padding-right: 0;
+  }
+
+   .alumni-member {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .alumni-name, 
+  .alumni-role {
+    min-width: auto;
+    width: 100%;
   }
 
   
@@ -332,9 +330,9 @@ classes: wide #uses theme's full-width class
 <h2 class="alumni-heading" style="grid-column: 1/-1; margin: 4rem 0 1rem;">Lab Alumni</h2>
 
 <div class="alumni-member">
-  <div class="alumni-name">John Smith</div>
-  <div class="alumni-role">PhD Student (2018-2022)</div>
-  <div class="alumni-bio">Now: Research Scientist at XYZ Corp | Developed MRI reconstruction algorithms</div>
+  <div class="alumni-name">Jesus Fajardo</div>
+  <div class="alumni-role">Postdoctoral Research Fellow (2022-2024)</div>
+  <div class="alumni-bio">Now: Research Scientist at Wayne State University</div>
 </div>
 
 <div class="alumni-member">
