@@ -20,8 +20,8 @@ classes: wide
     --global-text-color: #e0e0e0;
     --global-border-color: rgba(255, 255, 255, 0.08);
   }
-}*/
-
+}
+*/
 /* ===== TEAM GRID ===== */
 .team-container {
   display: grid;
@@ -68,23 +68,22 @@ classes: wide
   transform: scale(1.02);
 }
 
-.team-member__info {
-  padding-right: 2rem;
-  display: flex;
-  flex-direction: column;
+.team-member__info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .role {
   color: var(--global-text-color);
-  font-size: 0.9rem;
-  margin: 0.5rem 0;
+  font-size: 0.85rem;
+  margin: 0.2rem 0;
   font-style: italic;
 }
 
 .social-links {
   display: flex;
-  gap: 1.2rem;
-  margin-top: 1rem;
+  gap: 0.8rem;
+  margin-top: 0.3rem;
 }
 
 .social-links a {
@@ -96,6 +95,12 @@ classes: wide
 .social-links a:hover {
   transform: translateY(-3px);
   opacity: 0.9;
+}
+
+.bio p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 0.6rem;
 }
 
 .social-links a[href*="linkedin.com"]:hover { color: #0077b5 !important; }
@@ -126,19 +131,21 @@ classes: wide
 .alumni-name {
   font-weight: 600;
   color: var(--global-text-color);
+  font-size: 1rem;
 }
 
 .alumni-role {
   color: #666;
-  font-size: 0.9em;
+  font-size: 0.8rem;
 }
 
 .alumni-bio {
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   padding-top: 0.5rem;
   color: var(--global-text-color);
   border-top: 1px solid var(--global-border-color);
+  font-size: 0.85rem;
 }
 
 @media (max-width: 768px) {
@@ -153,7 +160,17 @@ classes: wide
     height: 200px;
   }
 
+  .team-member__info h3 {
+    font-size: 1.2rem;
+  }
+
+  .role {
+    font-size: 0.8rem;
+    margin: 0.1rem 0;
+  }
+
   .social-links {
+    gap: 0.6rem;
     justify-content: center;
   }
 
@@ -166,7 +183,7 @@ classes: wide
 
 <div class="team-container">
 
-  <!-- Current Members -->
+  <!-- Jiayao Yang -->
   <div class="team-member">
     <div class="team-member__photo-container">
       <img src="{{ '/images/jiayao-24-p.jpg' | relative_url }}" 
@@ -190,6 +207,7 @@ classes: wide
     </div>
   </div>
 
+  <!-- Hongze Yu -->
   <div class="team-member">
     <div class="team-member__photo-container">
       <img src="{{ '/images/hongze_profile_image.png' | relative_url }}" 
@@ -219,6 +237,7 @@ classes: wide
     </div>
   </div>
 
+  <!-- Christopher Keen -->
   <div class="team-member">
     <div class="team-member__photo-container">
       <img src="{{ '/images/chris_profile.jpg' | relative_url }}" 
@@ -239,6 +258,7 @@ classes: wide
     </div>
   </div>
 
+  <!-- Tejinder Kaur -->
   <div class="team-member">
     <div class="team-member__photo-container">
       <img src="{{ '/images/Headshot_Tejinder.jpg' | relative_url }}" 
@@ -262,6 +282,7 @@ classes: wide
     </div>
   </div>
 
+  <!-- Michael Jaroszewicz -->
   <div class="team-member">
     <div class="team-member__photo-container">
       <img src="{{ '/images/mike_profile.jpg' | relative_url }}" 
@@ -282,6 +303,7 @@ classes: wide
     </div>
   </div>
 
+  <!-- Catherine Liang -->
   <div class="team-member">
     <div class="team-member__photo-container">
       <img src="{{ '/images/profile_Catherine.jpg' | relative_url }}" 
