@@ -136,7 +136,7 @@ classes: wide
 }
 
 .alumni-role {
-  color: #666;
+  color: var(--global-text-color);
   font-size: 0.9rem;
 }
 
@@ -145,7 +145,7 @@ classes: wide
   margin-top: 0rem;
   padding-top: 0rem;
   color: var(--global-text-color);
-  border-top: none
+  border-top: none;
   font-size: 0.8rem;
 }
 
@@ -159,6 +159,9 @@ classes: wide
   .team-member__photo-container {
     width: 200px;
     height: 200px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
   }
 
   .team-member__info h3 {
