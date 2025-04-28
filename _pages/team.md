@@ -88,7 +88,7 @@ classes: wide
 
 .social-links a {
   color: var(--global-text-color);
-  font-size: 1.5rem;
+  font-size: 0.85rem;
   transition: all 0.3s ease;
 }
 
