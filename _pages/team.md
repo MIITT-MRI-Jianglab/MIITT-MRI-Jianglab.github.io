@@ -118,7 +118,7 @@ classes: wide
 .alumni-member {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
+  gap: 0.2rem 1.5rem;
   padding: 1rem;
   margin: 0.5rem 0;
 }
@@ -142,11 +142,12 @@ classes: wide
 
 .alumni-bio {
   width: 100%;
-  margin-top: 0rem;
-  padding-top: 0rem;
+  margin-top: 0;
+  padding-top: 0;
   color: var(--global-text-color);
   border-top: none;
-  font-size: 0.8rem;
+  line-height: 1.3;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -181,7 +182,7 @@ classes: wide
 
   .alumni-member {
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.1rem;
   }
 }
 </style>
