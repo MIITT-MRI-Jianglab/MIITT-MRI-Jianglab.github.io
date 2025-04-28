@@ -316,17 +316,9 @@ classes: wide #uses theme's full-width class
 
   <!-- Alumni Member 1 -->
   <div class="team-member alumni">
-    <div class="team-member__left">
-      <img src="/images/alumni1.jpg" 
-           alt="Alumni Name" 
-           class="team-member__photo">
-    </div>
     <div class="team-member__info">
       <h3>John Smith</h3>
       <p class="role"><em>PhD Student</em></p>
-      <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
       <div class="bio">
         <p>Completed PhD in 2022. Now working at XYZ Corp.</p>
       </div>
