@@ -96,28 +96,45 @@ classes: wide #uses theme's full-width class
 
 }
 
-/* Add alumni styling */
-.team-member.alumni {
-  opacity: 0.8;
+/* Alumni Styles */
+.alumni-member {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
   background: var(--global-bg-color);
-  border: 2px solid var(--global-border-color);
-}
-
-.team-member.alumni:hover {
-  transform: none;
-  box-shadow: 0 5px 15px var(--global-border-color);
-}
-
-/*.team-member.alumni .role::after {
-  content: " (Alumni)";
-  color: #666;
-}*/
-
-.alumni-heading {
-  grid-column: 1 / -1;
-  text-align: center;
-  margin: 4rem 0 2rem;
   color: var(--global-text-color);
+}
+
+.alumni-name {
+  font-weight: 500;
+  min-width: 150px;
+}
+
+.alumni-role {
+  color: #666;
+  font-style: italic;
+  min-width: 200px;
+}
+
+.alumni-bio {
+  color: #444;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .alumni-member {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .alumni-name, 
+  .alumni-role {
+    min-width: auto;
+    width: 100%;
+  }
 }
 
   
@@ -311,19 +328,20 @@ classes: wide #uses theme's full-width class
       </div>
     </div>
   </div>
- <!-- Alumni Heading -->
-  <h2 class="alumni-heading">Lab Alumni</h2>
+<!-- Add this inside team-container after current members -->
+<h2 class="alumni-heading" style="grid-column: 1/-1; margin: 4rem 0 1rem;">Lab Alumni</h2>
 
-  <!-- Alumni Member 1 -->
-  <div class="team-member alumni">
-    <div class="team-member__info">
-      <h3>Jesus Fajardo</h3>
-      <p class="role"><em>Postdoctoral Research Fellow (2022 - 2024)</em></p>
-      <div class="bio">
-        <p>Now at Wayne State University</p>
-      </div>
-    </div>
-  </div>
+<div class="alumni-member">
+  <div class="alumni-name">John Smith</div>
+  <div class="alumni-role">PhD Student (2018-2022)</div>
+  <div class="alumni-bio">Now: Research Scientist at XYZ Corp | Developed MRI reconstruction algorithms</div>
+</div>
+
+<div class="alumni-member">
+  <div class="alumni-name">Jane Doe</div>
+  <div class="alumni-role">Postdoc (2019-2021)</div>
+  <div class="alumni-bio">Now: Assistant Professor at ABC University | Specialized in quantitative MRI</div>
+</div>
 
 
 <!-- Add Font Awesome for icons -->
