@@ -3,11 +3,26 @@ layout: archive
 title: "Meet Our Team"
 permalink: /team/
 author_profile: false
-classes: wide #uses theme's full-width class
-
+classes: wide
 ---
+
 <style>
-/* Team Grid Styles */
+/* ===== THEME VARIABLES ===== */
+/*:root {
+  --global-bg-color: #ffffff;
+  --global-text-color: #333333;
+  --global-border-color: rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --global-bg-color: #1a1a1a;
+    --global-text-color: #e0e0e0;
+    --global-border-color: rgba(255, 255, 255, 0.08);
+  }
+}*/
+
+/* ===== TEAM GRID ===== */
 .team-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -34,8 +49,6 @@ classes: wide #uses theme's full-width class
   box-shadow: 0 12px 25px var(--global-border-color);
 }
 
-
-/* ===== PHOTO STYLES ===== */
 .team-member__photo-container {
   width: 250px;
   height: 250px;
@@ -54,9 +67,7 @@ classes: wide #uses theme's full-width class
 .team-member:hover .team-member__photo {
   transform: scale(1.02);
 }
-  
-  
-/* ===== INFO SECTION ===== */
+
 .team-member__info {
   padding-right: 2rem;
   display: flex;
@@ -70,7 +81,6 @@ classes: wide #uses theme's full-width class
   font-style: italic;
 }
 
-/* ===== SOCIAL LINKS ===== */
 .social-links {
   display: flex;
   gap: 1.2rem;
@@ -85,17 +95,14 @@ classes: wide #uses theme's full-width class
 
 .social-links a:hover {
   transform: translateY(-3px);
-  opacity: 0.9; /* Added for better visual feedback */
-
+  opacity: 0.9;
 }
 
-/* Platform-specific hover colors */
 .social-links a[href*="linkedin.com"]:hover { color: #0077b5 !important; }
 .social-links a[href*="github.com"]:hover { color: #181717 !important; }
 .social-links a[href*="mailto:"]:hover { color: #ea4335 !important; }
 .social-links a[href*="://"]:hover .fa-link { color: #34e68a !important; }
 
-/* Alumni Styles */
 .alumni-section {
   margin-top: 6rem;
   padding-top: 4rem;
@@ -122,7 +129,7 @@ classes: wide #uses theme's full-width class
 }
 
 .alumni-role {
-  color: var(--global-text-color);
+  color: #666;
   font-size: 0.9em;
 }
 
@@ -134,7 +141,6 @@ classes: wide #uses theme's full-width class
   border-top: 1px solid var(--global-border-color);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .team-member {
     grid-template-columns: 1fr;
@@ -155,33 +161,23 @@ classes: wide #uses theme's full-width class
     flex-direction: column;
     gap: 0.5rem;
   }
-  
-  .alumni-name-role {
-    flex-direction: column;
-    align-items: center;
-  } 
 }
 </style>
 
-
 <div class="team-container">
 
-  <!-- Team Member 1 -->
+  <!-- Current Members -->
   <div class="team-member">
     <div class="team-member__photo-container">
       <img src="{{ '/images/jiayao-24-p.jpg' | relative_url }}" 
-           alt="Jiayao Yang - PhD Student in EECS" 
+           alt="Jiayao Yang - PhD student in EECS" 
            class="team-member__photo">
-      
     </div>
-    
     <div class="team-member__info">
       <h3 id="Jiayao-Yang">Jiayao Yang</h3>
-      <p class="role"><em>PhD Student in EECS</em></p>
+      <p class="role"><em>PhD student in EECS</em></p>
       <div class="social-links">
-        <!-- <a href="#"><i class="fab fa-linkedin"></i></a>*/ -->
-        <!-- <a href="https://jyang000.github.io/"><i class="fab fa-link"></i></a> -->
-    <a href="https://jyang000.github.io/" aria-label="Personal website">
+        <a href="https://jyang000.github.io/" aria-label="Personal website">
           <i class="fas fa-link"></i>
         </a>
         <a href="mailto:jiayao@umich.edu" aria-label="Email">
@@ -194,9 +190,7 @@ classes: wide #uses theme's full-width class
     </div>
   </div>
 
-
-   <!-- Team Member 2 -->
-   <div class="team-member">
+  <div class="team-member">
     <div class="team-member__photo-container">
       <img src="{{ '/images/hongze_profile_image.png' | relative_url }}" 
            alt="Hongze Yu - PhD student in EECS" 
