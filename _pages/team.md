@@ -191,7 +191,7 @@ classes: wide #uses theme's full-width class
    <!-- Team Member 3 -->
   <div class="team-member">
     <div class="team-member__left">
-      <img src="{{ '/assets/images/team/john-doe.jpg' | relative_url }}" 
+      <img src="{{ '/images/chris_profile.jpg' | relative_url }}" 
            alt="Christopher Keen" 
            class="team-member__photo">
      
@@ -201,12 +201,12 @@ classes: wide #uses theme's full-width class
       <h3 id="Christopher-Keen">Christopher Keen</h3>
       <p class="role"><em>PhD student in BME</em></p>
        <div class="team-member__social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+       <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+       <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+        <a href="mailto:cekeen@med.umich.edu"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="bio">
-        <p>MRF</p>
+        <p>I’m a PhD student in Biomedical engineering, specializing in magnetic resonance fingerprinting (MRF). My work is focussed on improving the accuracy and quality MRF T1 and T2 maps and applying this technology to the diagnosis and management of abdominal and pelvic cancers. This includes MRF pulse sequence optimization and application in the prostate at 0.55T to improve MRI-guided biopsy procedures. When I’m not in the lab, I enjoy escaping the city to go camping, hiking, and skiing in the mountains.</p>
       </div>
     </div>
   </div>
@@ -228,7 +228,7 @@ classes: wide #uses theme's full-width class
         <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
         <!-- <a href="#"><i class="fab fa-github"></i></a> -->
         <a href="https://www.researchgate.net/profile/Tejinder-Kaur-28"><i class="fas fa-fw fa-link " aria-hidden="true"></i></a>
-        <a href="kaurte@med.umich.edu"><i class="fas fa-envelope"></i></a> 
+        <a href="mailto:kaurte@med.umich.edu"><i class="fas fa-envelope"></i></a> 
       </div>
       <div class="bio">
         <p>I’m an MD in Radiodiagnosis and currently working as a postdoctoral clinical research fellow. My work focuses on MRI-guided interventions at mid-field and the use of MRI fingerprinting in prostate imaging. I’m particularly interested in advancing techniques in prostate imaging to improve diagnostic accuracy. Outside of work, I enjoy reading and playing table tennis.</p>
