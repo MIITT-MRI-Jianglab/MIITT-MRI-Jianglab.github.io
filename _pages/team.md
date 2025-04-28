@@ -351,7 +351,7 @@ classes: wide
         <div class="alumni-name">Jesus Fajardo</div>
         <div class="alumni-role">Postdoctoral Research Fellow (2022-2024)</div>
       </div>
-      <div class="alumni-bio">Now Research Scientist at Wayne State University</div>
+      <div class="alumni-bio">Research Scientist at Wayne State University</div>
     </div>
 
     <div class="alumni-member">
@@ -359,7 +359,7 @@ classes: wide
         <div class="alumni-name">Jack Andrews</div>
         <div class="alumni-role">Master's Student in BME (2022-2023)</div>
       </div>
-      <div class="alumni-bio">Now Software Engineer at Delphinus Medical Technologies</div>
+      <div class="alumni-bio">Software Engineer at Delphinus Medical Technologies</div>
     </div>
 
     <div class="alumni-member">
@@ -367,7 +367,7 @@ classes: wide
         <div class="alumni-name">Matthew Zhu</div>
         <div class="alumni-role">Master's Student in EECS (2020-2022)</div>
       </div>
-      <div class="alumni-bio">Now Research Scientist at Western Digital</div>
+      <div class="alumni-bio">Research Scientist at Western Digital</div>
     </div>
   </div>
 </div>
