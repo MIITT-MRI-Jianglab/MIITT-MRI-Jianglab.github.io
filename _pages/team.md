@@ -99,30 +99,22 @@ classes: wide #uses theme's full-width class
 /* Alumni Styles */
 .alumni-member {
   display: flex;
-  align-items: baseline;
-  gap: 0.2rem;
-  padding: 0rem;
-  margin: 0rem 0rem;
-  border-radius: 8px;
-  /*margin-bottom: 0rem; /* Adjust this value */
-  background: var(--global-bg-color);
-  color: var(--global-text-color);
-}
-
-.alumni-name {
-  font-weight: 500;
-  min-width: 100px;
-}
-
-.alumni-role {
-  color: var(--global-text-color);
-  font-style: italic;
-  min-width: 150px;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 0.5rem 1.5rem; /* Horizontal and vertical gaps */
 }
 
 .alumni-bio {
-  color: var(--global-text-color);
-  flex-grow: 1;
+  width: 100%; /* Force new line */
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--global-border-color);
+}
+
+/* Keep name/role on same line */
+.alumni-name-role {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
 }
 
   
@@ -332,20 +324,26 @@ classes: wide #uses theme's full-width class
 <h2 class="alumni-heading" style="grid-column: 1/-1; margin: 4rem 0 1rem;">Lab Alumni</h2>
 
 <div class="alumni-member">
-  <div class="alumni-name">Jesus Fajardo</div>
-  <div class="alumni-role">Postdoctoral Research Fellow (2022-2024)</div>
+    <div class="alumni-name-role">
+      <div class="alumni-name">Jesus Fajardo</div>
+      <div class="alumni-role">Postdoctoral Research Fellow (2022-2024)</div>
+    </div>
   <div class="alumni-bio">Now Research Scientist at Wayne State University</div>
 </div>
 
 <div class="alumni-member">
-  <div class="alumni-name">Jack Andrews</div>
-  <div class="alumni-role">Master's Student in BME (2022-2023)</div>
+  <div class="alumni-name-role">
+    <div class="alumni-name">Jack Andrews</div>
+    <div class="alumni-role">Master's Student in BME (2022-2023)</div>
+  </div>
   <div class="alumni-bio">Now Software Engineer at Delphinus Medical Technologies</div>
 </div>
 
 <div class="alumni-member">
-  <div class="alumni-name">Matthew Zhu</div>
-  <div class="alumni-role">Master's Student in EECS (2020-2022)</div>
+  <div class="alumni-name-role">
+    <div class="alumni-name">Matthew Zhu</div>
+    <div class="alumni-role">Master's Student in EECS (2020-2022)</div>
+  </div>
   <div class="alumni-bio">Now Research Scientist at Western Digital</div>
 </div>
 
