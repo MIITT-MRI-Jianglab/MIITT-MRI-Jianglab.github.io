@@ -137,16 +137,16 @@ classes: wide
 
 .alumni-role {
   color: #666;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .alumni-bio {
   width: 100%;
   margin-top: 0.1rem;
-  padding-top: 0.5rem;
+  padding-top: 0.1rem;
   color: var(--global-text-color);
   border-top: none
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
