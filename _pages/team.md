@@ -108,10 +108,10 @@ classes: wide #uses theme's full-width class
   box-shadow: 0 5px 15px var(--global-border-color);
 }
 
-.team-member.alumni .role::after {
+/*.team-member.alumni .role::after {
   content: " (Alumni)";
   color: #666;
-}
+}*/
 
 .alumni-heading {
   grid-column: 1 / -1;
@@ -317,23 +317,14 @@ classes: wide #uses theme's full-width class
   <!-- Alumni Member 1 -->
   <div class="team-member alumni">
     <div class="team-member__info">
-      <h3>John Smith</h3>
-      <p class="role"><em>PhD Student</em></p>
+      <h3>Jesus Fajardo</h3>
+      <p class="role"><em>Postdoctoral Research Fellow (2022 - 2024)</em></p>
       <div class="bio">
-        <p>Completed PhD in 2022. Now working at XYZ Corp.</p>
+        <p>Now at Wayne State University</p>
       </div>
     </div>
   </div>
 
-  <!-- Alumni Member 2 -->
-  <div class="team-member alumni">
-    <!-- Similar structure -->
-  </div>
-
-
-
-
-</div>
 
 <!-- Add Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
