@@ -96,6 +96,32 @@ classes: wide #uses theme's full-width class
 
 }
 
+/* Add alumni styling */
+.team-member.alumni {
+  opacity: 0.8;
+  background: var(--global-bg-color);
+  border: 2px solid var(--global-border-color);
+}
+
+.team-member.alumni:hover {
+  transform: none;
+  box-shadow: 0 5px 15px var(--global-border-color);
+}
+
+.team-member.alumni .role::after {
+  content: " (Alumni)";
+  color: #666;
+}
+
+.alumni-heading {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 4rem 0 2rem;
+  color: var(--global-text-color);
+}
+
+  
+
 /* Platform-specific hover colors */
 .social-links a[href*="linkedin.com"]:hover { color: #0077b5 !important; }
 .social-links a[href*="github.com"]:hover { color: #181717 !important; }
@@ -105,44 +131,6 @@ classes: wide #uses theme's full-width class
   transform: scale(1.1); 
 }
 
-  /* Alumni Section */
-.alumni-section {
-  margin: 4rem 0;
-  padding-top: 3rem;
-  border-top: 2px solid var(--global-border-color);
-}
-
-.alumni-heading {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: var(--global-text-color);
-}
-
-.alumni-list {
-  display: grid;
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.alumni-member {
-  padding: 1.2rem;
-  background: var(--global-bg-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px var(--global-border-color);
-}
-
-.alumni-name {
-  margin: 0;
-  font-size: 1.1rem;
-  color: var(--global-text-color);
-}
-
-.alumni-details {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0.5rem 0 0;
-}
 
 @media (max-width: 768px) {
   .team-member {
@@ -167,9 +155,6 @@ classes: wide #uses theme's full-width class
     padding-right: 0;
   }
 
-  .alumni-list {
-    grid-template-columns: 1fr;
-  }
   
   .social-links {
     justify-content: center;
@@ -326,34 +311,36 @@ classes: wide #uses theme's full-width class
       </div>
     </div>
   </div>
-
-
-  <div class="alumni-section">
+ <!-- Alumni Heading -->
   <h2 class="alumni-heading">Lab Alumni</h2>
-  <div class="alumni-list">
-    
-    <div class="alumni-member">
-      <div class="alumni-name">John Smith</div>
-      <div class="alumni-details">
-        <div>PhD Student (2018-2022)</div>
-        <div>Now: Research Scientist at XYZ Corp</div>
+
+  <!-- Alumni Member 1 -->
+  <div class="team-member alumni">
+    <div class="team-member__left">
+      <img src="/images/alumni1.jpg" 
+           alt="Alumni Name" 
+           class="team-member__photo">
+    </div>
+    <div class="team-member__info">
+      <h3>John Smith</h3>
+      <p class="role"><em>PhD Student</em></p>
+      <div class="team-member__social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="bio">
+        <p>Completed PhD in 2022. Now working at XYZ Corp.</p>
       </div>
     </div>
-
-    <div class="alumni-member">
-      <div class="alumni-name">Jane Doe</div>
-      <div class="alumni-details">
-        <div>Postdoc (2019-2021)</div>
-        <div>Now: Assistant Professor at ABC University</div>
-        <!-- <div class="social-links" style="margin-top: 0.8rem;"> -->
-        <!--  <a href="#"><i class="fab fa-linkedin"></i></a> -->
-        <!--  <a href="#"><i class="fas fa-envelope"></i></a> -->
-        </div>
-      </div>
-    </div>
-
   </div>
+
+  <!-- Alumni Member 2 -->
+  <div class="team-member alumni">
+    <!-- Similar structure -->
+  </div>
+
 </div>
+
+
 </div>
 
 <!-- Add Font Awesome for icons -->
