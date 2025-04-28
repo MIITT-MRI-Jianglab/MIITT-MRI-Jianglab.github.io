@@ -142,10 +142,10 @@ classes: wide
 
 .alumni-bio {
   width: 100%;
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
   padding-top: 0.5rem;
   color: var(--global-text-color);
-  border-top: 1px solid var(--global-border-color);
+  border-top: none
   font-size: 0.85rem;
 }
 
