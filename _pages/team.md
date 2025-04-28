@@ -70,7 +70,8 @@ classes: wide
 
 .team-member__info h3 {
   font-size: 1.25rem;
-  margin-bottom: 0.2rem;
+  margin: 0; /* Changed from margin-bottom: 0.2rem */
+  padding-top: 0.2rem; /* Optional: Fine-tune if needed */
 }
 
 .role {
@@ -162,6 +163,7 @@ classes: wide
 
   .team-member__info h3 {
     font-size: 1.2rem;
+    margin: 0; 
   }
 
   .role {
