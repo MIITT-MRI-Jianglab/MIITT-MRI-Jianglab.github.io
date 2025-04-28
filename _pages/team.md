@@ -120,7 +120,7 @@ classes: wide
   flex-wrap: wrap;
   gap: 0.5rem 1.5rem;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .alumni-name-role {
@@ -143,7 +143,7 @@ classes: wide
 .alumni-bio {
   width: 100%;
   margin-top: 0.1rem;
-  padding-top: 0.1rem;
+  padding-top: 0.3rem;
   color: var(--global-text-color);
   border-top: none
   font-size: 0.8rem;
@@ -178,7 +178,7 @@ classes: wide
 
   .alumni-member {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.3rem;
   }
 }
 </style>
