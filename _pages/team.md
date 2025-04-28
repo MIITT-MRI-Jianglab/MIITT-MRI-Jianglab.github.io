@@ -100,8 +100,8 @@ classes: wide #uses theme's full-width class
 .alumni-member {
   display: flex;
   align-items: baseline;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 0.5rem;
+  padding: 0.5rem;
   margin: 0.5rem 0;
   border-radius: 8px;
   background: var(--global-bg-color);
@@ -116,7 +116,7 @@ classes: wide #uses theme's full-width class
 .alumni-role {
   color: var(--global-text-color);
   font-style: italic;
-  min-width: 200px;
+  min-width: 150px;
 }
 
 .alumni-bio {
@@ -332,13 +332,19 @@ classes: wide #uses theme's full-width class
 <div class="alumni-member">
   <div class="alumni-name">Jesus Fajardo</div>
   <div class="alumni-role">Postdoctoral Research Fellow (2022-2024)</div>
-  <div class="alumni-bio">Now: Research Scientist at Wayne State University</div>
+  <div class="alumni-bio">Now Research Scientist at Wayne State University</div>
 </div>
 
 <div class="alumni-member">
-  <div class="alumni-name">Jane Doe</div>
-  <div class="alumni-role">Postdoc (2019-2021)</div>
-  <div class="alumni-bio">Now: Assistant Professor at ABC University | Specialized in quantitative MRI</div>
+  <div class="alumni-name">Jack Andrews</div>
+  <div class="alumni-role">Master's Student in BME (2022-2023)</div>
+  <div class="alumni-bio">Now Software Engineer at Delphinus Medical Technologies</div>
+</div>
+
+<div class="alumni-member">
+  <div class="alumni-name">Matthew Zhu</div>
+  <div class="alumni-role">Master's Student in EECS (2020-2022)</div>
+  <div class="alumni-bio">Now Research Scientist at Western Digital</div>
 </div>
 
 
