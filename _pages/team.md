@@ -114,13 +114,13 @@ classes: wide #uses theme's full-width class
 }
 
 .alumni-role {
-  color: var(--global-text-color;
+  color: var(--global-text-color);
   font-style: italic;
   min-width: 200px;
 }
 
 .alumni-bio {
-  color: var(--global-text-color;
+  color: var(--global-text-color);
   flex-grow: 1;
 }
 
