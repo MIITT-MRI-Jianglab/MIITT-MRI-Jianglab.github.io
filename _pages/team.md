@@ -338,7 +338,7 @@ classes: wide #uses theme's full-width class
     <!-- Similar structure -->
   </div>
 
-</div>
+
 
 
 </div>
