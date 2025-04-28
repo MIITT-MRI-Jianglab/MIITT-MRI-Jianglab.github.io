@@ -118,14 +118,14 @@ classes: wide
 .alumni-member {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.2rem 1.5rem;
+  gap: 0.2rem 1rem;
   padding: 1rem;
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
 }
 
 .alumni-name-role {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: baseline;
 }
 
@@ -142,11 +142,11 @@ classes: wide
 
 .alumni-bio {
   width: 100%;
-  margin-top: 0;
+  margin-top: -0.2rem;
   padding-top: 0;
   color: var(--global-text-color);
   border-top: none;
-  line-height: 1.3;
+  line-height: 1.2;
   font-size: 0.9rem;
 }
 
@@ -180,9 +180,17 @@ classes: wide
     justify-content: center;
   }
 
-  .alumni-member {
-    flex-direction: column;
+ alumni-member {
+    margin: 0.1rem 0;
     gap: 0.1rem;
+  }
+  
+  .alumni-name-role {
+    gap: 0.3rem;
+  }
+  
+  .alumni-bio {
+    margin-top: -0.1rem;
   }
 }
 </style>
