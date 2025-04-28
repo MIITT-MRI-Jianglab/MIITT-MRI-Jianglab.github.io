@@ -110,7 +110,7 @@ classes: wide #uses theme's full-width class
 
 .alumni-name {
   font-weight: 500;
-  min-width: 150px;
+  min-width: 100px;
 }
 
 .alumni-role {
