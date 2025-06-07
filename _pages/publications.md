@@ -4,42 +4,45 @@ layout: page
 permalink: /publications/
 ---
 
-{% raw %}{% assign publications = site.data.publications | sort: "year" | reverse %}
-{% assign journals = publications | where: "type", "article" %}
-{% assign conferences = publications | where: "type", "inproceedings" %}
-{% assign books = publications | where: "type", "book" %}
+{% raw %}{% assign pubs = site.data.publications | sort: "year" | reverse %}
 
 ## Journal Articles
-{% for pub in journals %}
-<div class="publication">
-  <strong>{{ pub.title }}</strong><br>
-  {{ pub.author }}<br>
-  <em>{{ pub.journal }}</em>, {{ pub.year }}{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.pages %}:{{ pub.pages }}{% endif %}<br>
-  {% if pub.doi %}[<a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>]{% endif %}
-  {% if pub.url %}[<a href="{{ pub.url }}" target="_blank">PDF</a>]{% endif %}
-</div>
+{% for pub in pubs %}
+  {% if pub.type == "article" %}
+  <div class="publication">
+    <strong>{{ pub.title }}</strong><br>
+    {{ pub.author }}<br>
+    <em>{{ pub.journal }}</em>, {{ pub.year }}{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.pages %}:{{ pub.pages }}{% endif %}<br>
+    {% if pub.doi %}[<a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>]{% endif %}
+    {% if pub.url %}[<a href="{{ pub.url }}" target="_blank">PDF</a>]{% endif %}
+  </div>
+  {% endif %}
 {% endfor %}
 
 ## Conference Papers
-{% for pub in conferences %}
-<div class="publication">
-  <strong>{{ pub.title }}</strong><br>
-  {{ pub.author }}<br>
-  <em>{{ pub.booktitle }}</em>, {{ pub.year }}{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}<br>
-  {% if pub.doi %}[<a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>]{% endif %}
-  {% if pub.url %}[<a href="{{ pub.url }}" target="_blank">PDF</a>]{% endif %}
-</div>
+{% for pub in pubs %}
+  {% if pub.type == "inproceedings" %}
+  <div class="publication">
+    <strong>{{ pub.title }}</strong><br>
+    {{ pub.author }}<br>
+    <em>{{ pub.booktitle }}</em>, {{ pub.year }}{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}<br>
+    {% if pub.doi %}[<a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>]{% endif %}
+    {% if pub.url %}[<a href="{{ pub.url }}" target="_blank">PDF</a>]{% endif %}
+  </div>
+  {% endif %}
 {% endfor %}
 
 ## Books
-{% for pub in books %}
-<div class="publication">
-  <strong>{{ pub.title }}</strong><br>
-  {{ pub.author }}<br>
-  <em>{{ pub.publisher }}</em>, {{ pub.year }}<br>
-  {% if pub.doi %}[<a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>]{% endif %}
-  {% if pub.url %}[<a href="{{ pub.url }}" target="_blank">PDF</a>]{% endif %}
-</div>
+{% for pub in pubs %}
+  {% if pub.type == "book" %}
+  <div class="publication">
+    <strong>{{ pub.title }}</strong><br>
+    {{ pub.author }}<br>
+    <em>{{ pub.publisher }}</em>, {{ pub.year }}<br>
+    {% if pub.doi %}[<a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>]{% endif %}
+    {% if pub.url %}[<a href="{{ pub.url }}" target="_blank">PDF</a>]{% endif %}
+  </div>
+  {% endif %}
 {% endfor %}
 
 <style>
