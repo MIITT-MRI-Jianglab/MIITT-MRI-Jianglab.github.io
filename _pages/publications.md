@@ -4,7 +4,7 @@ layout: page
 permalink: /publications/
 ---
 
-{% raw %}{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% raw %}{% assign pubs = site.data.publications %}
 
 ## Journal Articles
 {% for pub in pubs %}
