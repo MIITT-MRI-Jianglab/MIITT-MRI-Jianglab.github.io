@@ -1,13 +1,15 @@
-- title: "Deep Learning Approaches"
-  author: "Your Name"
-  journal: "Journal of ML"
+- title: "Your Paper Title"
+  author: "Your Name, Co-Author"
+  journal: "Journal Name"
   year: 2023
-  type: article
-  sort_order: 1
+  type: "article"
+  doi: "10.xxxx/xxxx"
+  url: "https://example.com/paper.pdf"
 
-- title: "Computer Vision Techniques"
-  author: "Your Name"
-  booktitle: "IEEE Conference"
+- title: "Conference Paper"
+  author: "Your Name, Co-Author"
+  booktitle: "Conference Name"
   year: 2022
-  type: inproceedings
-  sort_order: 2
+  type: "inproceedings"
+  pages: "123-145"
+  doi: "10.xxxx/xxxx"
