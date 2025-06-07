@@ -1,15 +1,11 @@
-- title: "Your Paper Title"
-  author: "Your Name, Co-Author"
-  journal: "Journal Name"
+- title: "Exciting Research Paper"
+  authors: "John Doe, Jane Smith"
+  journal: "Journal of Interesting Studies"
   year: 2023
-  type: "article"
-  doi: "10.xxxx/xxxx"
-  url: "https://example.com/paper.pdf"
+  url: "https://example.com/paper-link"
 
-- title: "Conference Paper"
-  author: "Your Name, Co-Author"
-  booktitle: "Conference Name"
+- title: "Another Great Paper"
+  authors: "John Doe"
+  journal: "Another Journal"
   year: 2022
-  type: "inproceedings"
-  pages: "123-145"
-  doi: "10.xxxx/xxxx"
+  url: "https://example.com/another-paper-link"
