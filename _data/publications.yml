@@ -1,18 +1,13 @@
-- title: "Deep Learning Approaches for Computer Vision"
-  author: "Your Name, Collaborator One, Collaborator Two"
-  journal: "Journal of Machine Learning Research"
+- title: "Deep Learning Approaches"
+  author: "Your Name"
+  journal: "Journal of ML"
   year: 2023
-  volume: 24
-  pages: 1-45
-  doi: 10.1234/jmlr.2023.1234
   type: article
-  url: https://example.com/paper1.pdf
+  sort_order: 1
 
-- title: "Vision Transformers for Real-Time Processing"
-  author: "Your Name, Collaborator Three"
-  booktitle: "Proceedings of the IEEE Conference on Computer Vision"
+- title: "Computer Vision Techniques"
+  author: "Your Name"
+  booktitle: "IEEE Conference"
   year: 2022
-  pages: 1234-1245
-  doi: 10.1109/CVPR.2022.12345
   type: inproceedings
-  url: https://example.com/paper2.pdf
+  sort_order: 2
