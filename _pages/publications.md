@@ -6,8 +6,6 @@ author_profile: true
 
 ---
 
-# Academic Publications
-
 {% raw %}
 {% assign publications = site.data.publications | sort: "year" | reverse %}
 {% assign journals = publications | where: "type", "article" %}
