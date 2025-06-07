@@ -1,9 +1,11 @@
 
 ---
-title: Publications
-layout: page
+layout: archive
+title: "Publications"
 permalink: /publications/
+author_profile: true
 ---
+
 
 # Academic Publications
 
