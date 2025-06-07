@@ -1,74 +1,115 @@
+
 ---
-layout: archive
-title: "Publications"
+title: Publications
+layout: page
 permalink: /publications/
-author_profile: true
-
 ---
 
-{% raw %}
-{% assign publications = site.data.publications | sort: "year" | reverse %}
-{% assign journals = publications | where: "type", "article" %}
-{% assign conferences = publications | where: "type", "inproceedings" %}
-{% assign books = publications | where: "type", "book" %}
+# Academic Publications
+
+{% raw %}{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign articles = pubs | where: "type", "article" %}
+{% assign conferences = pubs | where: "type", "inproceedings" %}
+{% assign books = pubs | where: "type", "book" %}
 
 ## Journal Articles
-{% for pub in journals %}
-<div class="publication">
-  <strong>{{ pub.title }}</strong><br>
-  {{ pub.author }}<br>
-  <em>{{ pub.journal }}</em>, {{ pub.year }}{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.pages %}:{{ pub.pages }}{% endif %}<br>
-  {% if pub.doi %}[<a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>]{% endif %}
-  {% if pub.url %}[<a href="{{ pub.url }}" target="_blank">PDF</a>]{% endif %}
+{% for pub in articles %}
+<div class="pub-item">
+  <div class="pub-title">{{ pub.title }}</div>
+  <div class="pub-authors">{{ pub.authors }}</div>
+  <div class="pub-venue">
+    <em>{{ pub.journal }}</em>
+    {% if pub.volume %}, Vol. {{ pub.volume }}{% endif %}
+    {% if pub.pages %}, pp. {{ pub.pages }}{% endif %}
+    ({{ pub.year }})
+  </div>
+  <div class="pub-links">
+    {% if pub.doi %}
+    <a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>
+    {% endif %}
+    {% if pub.url %}
+    <a href="{{ pub.url }}" target="_blank">PDF</a>
+    {% endif %}
+  </div>
 </div>
 {% endfor %}
 
 ## Conference Papers
 {% for pub in conferences %}
-<div class="publication">
-  <strong>{{ pub.title }}</strong><br>
-  {{ pub.author }}<br>
-  <em>{{ pub.booktitle }}</em>, {{ pub.year }}{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}<br>
-  {% if pub.doi %}[<a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>]{% endif %}
-  {% if pub.url %}[<a href="{{ pub.url }}" target="_blank">PDF</a>]{% endif %}
+<div class="pub-item">
+  <div class="pub-title">{{ pub.title }}</div>
+  <div class="pub-authors">{{ pub.authors }}</div>
+  <div class="pub-venue">
+    <em>{{ pub.booktitle }}</em>
+    {% if pub.pages %}, pp. {{ pub.pages }}{% endif %}
+    ({{ pub.year }})
+  </div>
+  <div class="pub-links">
+    {% if pub.doi %}
+    <a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>
+    {% endif %}
+    {% if pub.url %}
+    <a href="{{ pub.url }}" target="_blank">PDF</a>
+    {% endif %}
+  </div>
 </div>
 {% endfor %}
 
 ## Books
 {% for pub in books %}
-<div class="publication">
-  <strong>{{ pub.title }}</strong><br>
-  {{ pub.author }}<br>
-  <em>{{ pub.publisher }}</em>, {{ pub.year }}<br>
-  {% if pub.doi %}[<a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>]{% endif %}
-  {% if pub.url %}[<a href="{{ pub.url }}" target="_blank">PDF</a>]{% endif %}
+<div class="pub-item">
+  <div class="pub-title">{{ pub.title }}</div>
+  <div class="pub-authors">{{ pub.authors }}</div>
+  <div class="pub-venue">
+    <em>{{ pub.publisher }}</em> ({{ pub.year }})
+  </div>
+  <div class="pub-links">
+    {% if pub.doi %}
+    <a href="https://doi.org/{{ pub.doi }}" target="_blank">DOI</a>
+    {% endif %}
+    {% if pub.url %}
+    <a href="{{ pub.url }}" target="_blank">PDF</a>
+    {% endif %}
+  </div>
 </div>
 {% endfor %}
 
 <style>
-.publication {
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
+.pub-item {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #eaeaea;
 }
-.publication strong {
-  font-size: 1.1em;
+.pub-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
   color: #1a0dab;
 }
-.publication em {
-  color: #006621;
+.pub-authors {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.3rem;
 }
-.publication a {
-  margin-right: 8px;
-  font-family: monospace;
+.pub-venue {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
 }
-</style>
-{% endraw %}
-
-
-
-
-
+.pub-links a {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 3px 10px;
+  background: #f1f8ff;
+  border: 1px solid #c8e1ff;
+  border-radius: 3px;
+  color: #0366d6;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.pub-links a:hover {
+  background: #def;
+}
+</style>{% endraw %}
   You can find my articles on [Google Scholar](https://scholar.google.com/citations?user=IgJsqoIAAAAJ&hl=en&authuser=1).
 
   
