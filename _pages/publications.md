@@ -1,12 +1,13 @@
 ---
 title: Publications
-layout: page
+layout: archive
 permalink: /publications/
+author_profile: true
 ---
-# My Publications
+# Publications
 
 {% for publication in site.data.publications %}
-1. **{{ publication.title }}**  
+**{{ publication.title }}**  
    *{{ publication.authors }}*  
    Published in {{ publication.journal }}, {{ publication.year }}  
    [Read more]({{ publication.url }})
