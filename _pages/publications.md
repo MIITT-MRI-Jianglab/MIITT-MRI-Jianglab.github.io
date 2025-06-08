@@ -4,11 +4,18 @@ layout: archive
 permalink: /publications/
 author_profile: true
 ---
-# Publications
 
+<ul class="publications-list">
 {% for publication in site.data.publications %}
-**{{ publication.title }}**  
-   *{{ publication.authors }}*  
-   Published in {{ publication.journal }}, {{ publication.year }}  
-   [Read more]({{ publication.url }})
+<li>
+    <strong>{{ publication.title }}</strong><br>
+    <em>{{ publication.authors }}</em><br>
+    Published in {{ publication.journal }}, {{ publication.year }}<br>
+    <a href="{{ publication.url }}">Read more</a>
+</li>
 {% endfor %}
+</ul>
+
+.publications-list li {
+    font-size: 14px; /* Customize as desired */
+}
