@@ -5,17 +5,13 @@ permalink: /publications/
 author_profile: true
 ---
 
-<ul class="publications-list">
+<ul>
 {% for publication in site.data.publications %}
-<li>
-    <strong>{{ publication.title }}</strong><br>
-    <em>{{ publication.authors }}</em><br>
+<li style="font-size: 14px;"> <!-- Set the size for each list item -->
+    <strong style="font-size: 16px;">{{ publication.title }}</strong><br> <!-- Larger size for titles -->
+    <em style="font-size: 14px;">{{ publication.authors }}</em><br>
     Published in {{ publication.journal }}, {{ publication.year }}<br>
     <a href="{{ publication.url }}">Read more</a>
 </li>
 {% endfor %}
 </ul>
-
-.publications-list li {
-    font-size: 14px; /* Customize as desired */
-}
