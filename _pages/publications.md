@@ -9,8 +9,8 @@ author_profile: true
 {% for publication in site.data.publications %}
 <li style="font-size: 14px;"> <!-- Set the size for each list item -->
     <strong style="font-size: 16px;">{{ publication.title }}</strong><br> <!-- Larger size for titles -->
+    {{ publication.journal }}, {{ publication.year }}<br>
     <em style="font-size: 14px;">{{ publication.authors }}</em><br>
-    Published in {{ publication.journal }}, {{ publication.year }}<br>
     <a href="{{ publication.url }}">Read more</a>
 </li>
 {% endfor %}
