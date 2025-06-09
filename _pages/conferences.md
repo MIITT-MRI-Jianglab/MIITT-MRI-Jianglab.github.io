@@ -5,7 +5,6 @@ permalink: /conferences/
 author_profile: true
 ---
 
-{% raw %}
 {% assign sorted_conferences = site.data.conferences | sort: 'year' | reverse %}
 {% for conference in sorted_conferences %}
 
@@ -37,4 +36,4 @@ author_profile: true
             <span> • {{ conference.program }}</span>
         {% endif %}
     </div>
-</div>{% endraw %}
+</div>
