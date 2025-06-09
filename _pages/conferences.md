@@ -8,7 +8,7 @@ author_profile: true
 <ul>
 {% assign sorted_conferences = site.data.conferences | sort: 'year' | reverse %}
 {% for conference in sorted_conferences %}
-    <div>
+
         {{ conference.authors }}
         {{ conference.title }}
         {{ conference.conference }}, {{ conference.year }},
@@ -19,7 +19,6 @@ author_profile: true
                 font-weight: bold;
             ">{{ conference.award }}</span>
         {% endif %}
-    </div>
-  
+
 
 </ul>
