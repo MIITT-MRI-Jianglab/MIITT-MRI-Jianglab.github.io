@@ -16,7 +16,7 @@ author_profile: true
       {{ conference.conference }}, {{ conference.year }}, {{ conference.format }} {{ conference.program }}
        {% if conference.award %} <!-- Award display -->
             <span style="
-                background-color: #ffd700; 
+                background-color: #E4D6A0; 
                 color: #000; 
                 padding: 2px 8px; 
                 border-radius: 3px; 
