@@ -11,16 +11,10 @@ author_profile: true
 <li style="font-size: 14px; margin-bottom: 20px;"> <!-- Added bottom margin -->
    <div style="margin-top: 5px;"> <!-- Added top margin -->
       <em style="font-size: 14px;">{{ conference.authors }}</em><br>  
-      {{ conference.conference }}, {{ conference.year }}<br>
+      <strong style="font-size: 16px;">{{ conference.title }}</strong>
        
-    
-    </div>
-    
-    
-    
-    <div>
-        <strong style="font-size: 16px;">{{ conference.title }}</strong>
-        {% if conference.award %} <!-- Award display -->
+      {{ conference.conference }}, {{ conference.year }}<br>
+       {% if conference.award %} <!-- Award display -->
             <span style="
                 background-color: #ffd700; 
                 color: #000; 
@@ -31,7 +25,15 @@ author_profile: true
                 font-size: 14px;
             ">{{ conference.award }}</span>
         {% endif %}
+       
+    
     </div>
+    
+    
+    
+
+        
+
     
 </li>
 {% endfor %}
