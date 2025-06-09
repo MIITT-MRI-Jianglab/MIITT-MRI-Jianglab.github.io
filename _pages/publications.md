@@ -12,7 +12,7 @@ author_profile: true
     <strong style="font-size: 16px;">{{ publication.title }}</strong><br> <!-- Larger size for titles -->
     {{ publication.journal }}, {{ publication.year }}<br>
     <em style="font-size: 14px;">{{ publication.authors }}</em><br>
-    <a href="{{ publication.url }}">Read more</a>
+    <!-- <a href="{{ publication.url }}">Read more</a> -->
 </li>
 {% endfor %}
 </ul>
