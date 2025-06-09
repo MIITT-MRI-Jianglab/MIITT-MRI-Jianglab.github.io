@@ -10,7 +10,7 @@ author_profile: true
 {% for conference in sorted_conferences %}
 <li style="font-size: 14px; margin-bottom: 20px;"> <!-- Added bottom margin -->
     <div>
-        <strong style="font-size: 16px;">{{ publication.title }}</strong>
+        <strong style="font-size: 16px;">{{ conference.title }}</strong>
         {% if conference.award %} <!-- Award display -->
             <span style="
                 background-color: #ffd700; 
