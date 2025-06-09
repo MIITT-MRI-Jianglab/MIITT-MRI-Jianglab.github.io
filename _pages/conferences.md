@@ -5,17 +5,21 @@ permalink: /conferences/
 author_profile: true
 ---
 
+<ul>
 {% assign sorted_conferences = site.data.conferences | sort: 'year' | reverse %}
 {% for conference in sorted_conferences %}
-
-<div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee;">
-    <div style="margin-bottom: 5px;">
-        <span style="font-style: italic;">{{ conference.authors }}</span>
+<li style="font-size: 14px; margin-bottom: 20px;"> <!-- Added bottom margin -->
+   <div style="margin-top: 5px;"> <!-- Added top margin -->
+        {{ conference.journal }}, {{ conference.year }}<br>
+        <em style="font-size: 14px;">{{ conference.authors }}</em><br>
+        <!-- <a href="{{ publication.url }}">Read more</a> -->
     </div>
     
-    <div style="margin-bottom: 5px;">
+    
+    
+    <div>
         <strong style="font-size: 16px;">{{ conference.title }}</strong>
-        {% if conference.award %} 
+        {% if conference.award %} <!-- Award display -->
             <span style="
                 background-color: #ffd700; 
                 color: #000; 
@@ -28,12 +32,6 @@ author_profile: true
         {% endif %}
     </div>
     
-    <div>
-        <span>{{ conference.conference }}</span>, 
-        <span>{{ conference.year }}</span>,
-        <span>{{ conference.format }}</span>
-        {% if conference.program %}
-            <span> • {{ conference.program }}</span>
-        {% endif %}
-    </div>
-</div>
+</li>
+{% endfor %}
+</ul>
