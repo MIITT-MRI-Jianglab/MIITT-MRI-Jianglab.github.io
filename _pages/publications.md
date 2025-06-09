@@ -1,4 +1,4 @@
-{% raw %}---
+---
 title: Publications
 layout: archive
 permalink: /publications/
@@ -30,4 +30,4 @@ author_profile: true
     </div>
 </li>
 {% endfor %}
-</ul>{% endraw %}
+</ul>
