@@ -5,7 +5,11 @@ permalink: /conferences/
 author_profile: true
 ---
 
-{% raw %}<div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee;">
+{% raw %}
+{% assign sorted_conferences = site.data.conferences | sort: 'year' | reverse %}
+{% for conference in sorted_conferences %}
+
+<div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee;">
     <div style="margin-bottom: 5px;">
         <span style="font-style: italic;">{{ conference.authors }}</span>
     </div>
