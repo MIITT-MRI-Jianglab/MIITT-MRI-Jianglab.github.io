@@ -10,9 +10,10 @@ author_profile: true
 {% for conference in sorted_conferences %}
 <li style="font-size: 14px; margin-bottom: 20px;"> <!-- Added bottom margin -->
    <div style="margin-top: 5px;"> <!-- Added top margin -->
-        {{ conference.journal }}, {{ conference.year }}<br>
-        <em style="font-size: 14px;">{{ conference.authors }}</em><br>
-        <!-- <a href="{{ publication.url }}">Read more</a> -->
+      <em style="font-size: 14px;">{{ conference.authors }}</em><br>  
+      {{ conference.conference }}, {{ conference.year }}<br>
+       
+    
     </div>
     
     
