@@ -21,13 +21,13 @@
   authors: "Yang J, Nielsen JF, Jiang Y." 
   format: "Digital Poster"
   program: "3285"
--
-  title: "3D High-Resolution Reduced Field-of-View T2-Weighted Prostate Imaging by Combining 3D EPI & Spatially Selective Pulses"
-  year: "2025"
-  conference: "ISMRM Body MRI Workshop Philadelphia"
-  authors: "Yang J, Nielsen JF, Fessler JA, Jiang Y." 
-  format: "Digital Poster"
-  program: "22"
+#-
+#  title: "3D High-Resolution Reduced Field-of-View T2-Weighted Prostate Imaging by Combining 3D EPI & Spatially Selective Pulses"
+#  year: "2025"
+#  conference: "ISMRM Body MRI Workshop Philadelphia"
+#  authors: "Yang J, Nielsen JF, Fessler JA, Jiang Y." 
+#  format: "Digital Poster"
+#  program: "22"
 -
   title: "Calibration-free Multidimensional Universal Refocusing Pulse Design for 3D Reduced Field-of-View Prostate Imaging"
   year: "2024"
@@ -42,12 +42,12 @@
   authors: "Yang J, Nielsen JF, Jiang Y." 
   format: "Power Pitch"
   program: "0200"
--
-  title: "Multidimensional RF Pulse Design in Spin-Domain Using Auto-Differentiation"
-  year: "2023"
-  conference: "ISMRM Workshop on Data Sampling & Image Reconstruction, Sedona"
-  authors: "Yang J, Nielsen JF, Jiang Y." 
-  format: "Traditional Poster"
-  program: "77"
+#-
+#  title: "Multidimensional RF Pulse Design in Spin-Domain Using Auto-Differentiation"
+#  year: "2023"
+#  conference: "ISMRM Workshop on Data Sampling & Image Reconstruction, Sedona"
+#  authors: "Yang J, Nielsen JF, Jiang Y." 
+#  format: "Traditional Poster"
+#  program: "77"
 
 
