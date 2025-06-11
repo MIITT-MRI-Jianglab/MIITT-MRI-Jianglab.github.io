@@ -13,7 +13,7 @@ author_profile: true
       <em style="font-size: 16px;">{{ conference.authors }}</em> 
       <strong style="font-size: 16px;">{{ conference.title }}</strong>
        
-      {{ conference.conference }}, {{ conference.year }}, {{ conference.format }} {{ conference.program }}
+      ,{{ conference.conference }}, {{ conference.year }}, {{ conference.format }} {{ conference.program }}
        {% if conference.award %} <!-- Award display -->
             <span style="
                 background-color: #E4D6A0; 
