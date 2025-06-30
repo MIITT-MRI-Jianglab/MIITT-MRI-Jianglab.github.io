@@ -21,11 +21,7 @@ author_profile: false
         {% endif %}
       </div>
       <div class="news-text">
-        {{ item.content | markdownify }}
-      
-      {% if item.link %}
-      <a href="{{ item.link.url }}" class="news-link">{{ item.link.text }}</a>
-      {% endif %}
+        {{ item.content | markdownify }}{% if item.link %}<a href="{{ item.link.url }}" class="news-link">{{ item.link.text }}</a>{% endif %}
       </div>
     </div>
   </div>
@@ -113,7 +109,7 @@ author_profile: false
   }
   
   .news-link {
-    display: inline-block;
+    display: inline;
     color: #2980b9;
     font-weight: 600;
     text-decoration: none;
