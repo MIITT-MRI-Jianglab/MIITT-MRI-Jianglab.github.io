@@ -7,7 +7,7 @@ author_profile: true
 
 <ul>
 {% assign confs_by_year = site.data.conferences | group_by: 'year' %}
-{% assign years_sorted = confs_by_year | sort: 'name' | reverse %}
+{% assign years_sorted = confs_by_year | sort: 'title' | reverse %}
 
 {% for year in years_sorted %}
     {% assign sorted_confs_in_year = year.items | sort: 'program' %}
