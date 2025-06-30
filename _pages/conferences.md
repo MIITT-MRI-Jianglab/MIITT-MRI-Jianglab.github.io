@@ -12,10 +12,10 @@ author_profile: true
     {% assign conferences_in_year = year_group.items | sort: 'program' %}
     
     {% for conference in conferences_in_year %}
-    <li style="font-size: 16px; margin-bottom: 20px;">
+    <li style="font-size: 14px; margin-bottom: 16px;">
         <div style="margin-top: 5px;">
             <em>{{ conference.authors }}</em> 
-            <strong>{{ conference.title }}</strong>,<br>
+            <strong>{{ conference.title }}</strong>,
             
             {% if conference.location %}
                 {{ conference.conference }} ({{ conference.location }}), 
@@ -29,12 +29,12 @@ author_profile: true
                 <span style="
                     background-color: #E4D6A0;
                     color: #000;
-                    padding: 2px 8px;
-                    border-radius: 3px;
-                    margin-left: 10px;
+                    padding: 2px 4px;
+                    border-radius: 2px;
+                    margin-left: 5px;
                     font-weight: bold;
                     display: inline-block;
-                    margin-top: 3px;
+                    margin-top: 2px;
                 ">{{ conference.award }}</span>
             {% endif %}
         </div>
