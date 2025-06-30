@@ -34,7 +34,7 @@ author_profile: true
     <li style="font-size: 16px; margin-bottom: 20px;">
         <div style="margin-top: 5px;">
             <em>{{ conference.authors }}</em> 
-            <strong>{{ conference.title }}</strong>,<br>
+            <strong>{{ conference.title }}</strong>,
             
             {% if conference.location %}
                 {{ conference.conference }} ({{ conference.location }}), 
