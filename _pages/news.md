@@ -21,11 +21,9 @@ author_profile: false
         {% endif %}
       </div>
       <div class="news-text">
-        {{ item.content | markdownify}}
+        {{ item.content | markdownify }}
         {% if item.link %}
-        <span class="news-link-container">
-          <a href="{{item.link.url}}" class="news-link">{{item.link.text}}</a>
-        </span>
+        <a href="{{ item.link.url }}" class="news-link">{{ item.link.text }}</a>
         {% endif %}
       </div>
     </div>
@@ -65,7 +63,7 @@ author_profile: false
   
   .news-image img {
     width: 100%;
-    height: flex;
+    height: auto;
     object-fit: cover;
     transition: transform 0.5s ease;
   }
@@ -111,27 +109,20 @@ author_profile: false
     margin-bottom: 15px;
     line-height: 1.6;
     color: var(--global-text-color);
-    display: block; /* Add this */
-    width: 100%; /* Add this */
-    overflow: hidden;
   }
-  .news-text > : last-child {
-    display:inline;
-    margin-left: 5px;
+  
+  /* Fix for making the link appear inline */
+  .news-text p:last-child {
+    display: inline;
   }
-  .news-link-container {
-  display: inline;
-  margin-left: 5px;
-}
-
   
   .news-link {
     display: inline;
     color: #2980b9;
-    /*font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
-    transition: color 0.3s ease;*/
-    margin-left: 5px; /* Add space between text and link */
+    transition: color 0.3s ease;
+    margin-left: 5px;
     white-space: nowrap;
   }
   
