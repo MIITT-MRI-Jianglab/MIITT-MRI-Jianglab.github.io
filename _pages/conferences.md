@@ -26,8 +26,20 @@ author_profile: true
             {{ conference.year }}, {{ conference.format }} {{ conference.program }}
             
             {% if conference.award %}
+                {% comment %} Determine award color based on award type {% endcomment %}
+                {% assign award_type = conference.award | downcase %}
+                {% assign award_color = "#E4D6A0" %} {% comment %} Default gold color {% endcomment %}
+                
+                {% if award_type contains "summa" %}
+                    {% assign award_color = "#FFD700" %} {% comment %} Gold - Summa Cum Laude {% endcomment %}
+                {% elsif award_type contains "magna" %}
+                    {% assign award_color = "#C0C0C0" %} {% comment %} Silver - Magna Cum Laude {% endcomment %}
+                {% elsif award_type contains "cum laude" %}
+                    {% assign award_color = "#CD7F32" %} {% comment %} Bronze - Other Cum Laude {% endcomment %}
+                {% endif %}
+                
                 <span style="
-                    background-color: #E4D6A0;
+                    background-color: {{ award_color }};
                     color: #000;
                     padding: 2px 4px;
                     border-radius: 2px;
