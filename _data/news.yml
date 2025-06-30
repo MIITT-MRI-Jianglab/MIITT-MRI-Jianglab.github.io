@@ -1,0 +1,14 @@
+- title: "New Paper Accepted to Nature Medical Imaging"
+  date: 2025-04-10
+  image: "/assets/images/news/nature-paper.jpg"
+  category: "Publication"
+  content: |
+    Our paper "Bilevel Optimized Implicit Neural Representation for Scan-Specific 
+    Accelerated MRI Reconstruction" has been accepted for publication in Nature 
+    Medical Imaging. This work presents a novel framework that reduces MRI scan 
+    times by 80% while maintaining diagnostic quality.
+    
+    First author Yu Huang will present these findings at the ISMRM 2025 conference.
+  link:
+    text: "View preprint"
+    url: "/publications/2025-nature-mri"
