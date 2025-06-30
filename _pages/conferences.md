@@ -10,31 +10,27 @@ author_profile: true
 {% assign years_sorted = confs_by_year | sort: 'name' | reverse %}
 
 {% for year in years_sorted %}
-    {% comment %} Create a temporary array with converted program numbers {% endcomment %}
+    {% comment %} Create a temporary array with numerical program values {% endcomment %}
     {% assign confs_with_num = '' | split: '' %}
     {% for conf in year.items %}
         {% assign new_conf = conf %}
         
-        {% comment %} Handle program number conversion {% endcomment %}
-        {% assign num = conf.program | times: 1 %}
-        {% if num == 0 %}
-            {% comment %} If conversion fails, use original value as string {% endcomment %}
-            {% assign num = conf.program | default: 99999 %}
-        {% endif %}
+        {% comment %} Convert program number to integer {% endcomment %}
+        {% assign num = conf.program | plus: 0 %}
         
         {% comment %} Create a temporary sort_num property {% endcomment %}
         {% assign new_conf = new_conf | hash: 'sort_num', num %}
         {% assign confs_with_num = confs_with_num | push: new_conf %}
     {% endfor %}
     
-    {% comment %} Sort by the temporary sort_num property {% endcomment %}
+    {% comment %} Sort by the temporary sort_num property numerically {% endcomment %}
     {% assign sorted_confs_in_year = confs_with_num | sort: 'sort_num' %}
     
     {% for conference in sorted_confs_in_year %}
-    <li style="font-size: 14px; margin-bottom: 18px;">
+    <li style="font-size: 14px; margin-bottom: 20px;">
         <div style="margin-top: 5px;">
             <em>{{ conference.authors }}</em> 
-            <strong>{{ conference.title }}</strong>,
+            <strong>{{ conference.title }}</strong>,<br>
             
             {% if conference.location %}
                 {{ conference.conference }} ({{ conference.location }}), 
@@ -44,19 +40,19 @@ author_profile: true
             
             {{ conference.year }}, {{ conference.format }} 
             
-            {% comment %} Display original program value with leading zeros {% endcomment %}
+            {% comment %} Display original program value exactly as in YAML {% endcomment %}
             {{ conference.program }}
             
             {% if conference.award %}
                 <span style="
                     background-color: #E4D6A0;
                     color: #000;
-                    padding: 2px 4px;
+                    padding: 2px 8px;
                     border-radius: 3px;
-                    margin-left: 5px;
+                    margin-left: 10px;
                     font-weight: bold;
                     display: inline-block;
-                    margin-top: 2px;
+                    margin-top: 3px;
                 ">{{ conference.award }}</span>
             {% endif %}
         </div>
