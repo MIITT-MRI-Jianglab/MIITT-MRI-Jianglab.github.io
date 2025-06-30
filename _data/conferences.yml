@@ -4,7 +4,7 @@
   conference: "ISMRM Hawaii"
   authors: "Yu H, Fessler JA, Jiang Y."
   format: "Oral Talk"
-  program: "0389"
+  program: 0389
   award: "Summa Cum Laude"
 -
   title: "3D High-Resolution Reduced Field-of-View T2-Weighted Imaging by Combining 3D EPI and Spatially Selective Pulses"
