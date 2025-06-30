@@ -55,7 +55,7 @@ author_profile: false
   }
   
   .news-image {
-    flex: 0 0 300px;
+    flex: 0 0 512px;
     margin-right: 30px;
     overflow: hidden;
     border-radius: 6px;
