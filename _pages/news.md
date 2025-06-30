@@ -115,7 +115,7 @@ author_profile: false
     color: #2980b9;
     font-weight: 600;
     text-decoration: none;
-    transition: color 0.3s ease;
+    /*transition: color 0.3s ease;*/
     margin-left: 5px; /* Add space between text and link */
   }
   
