@@ -4,6 +4,7 @@
   category: "Publication"
   content: |
     Our paper "Multidimensional RF pulse design using auto-differentiable spin-domain optimization and its application to reduced field-of-view imaging" has been accepted for publication in Magnetic Resonance in Medicine. This work presents a novel algorithm for designing multidimensional radiofrequency pulses using spin-domain representation, enabling efficient design of 3D pulses for reduced field-of-view imaging.
+  link:
     text: "More"
     url: "https://doi.org/10.1002/mrm.30607"
 
