@@ -309,3 +309,9 @@
   journal: "IEEE Trans Med Imaging"
   authors: "Zou, J., Jiang, Y., Kaplan, S., Seiberlich, N., Cao, Y."
   url: ""
+-
+  title: "Multidimensional RF pulse design using auto‐differentiable spin‐domain optimization and its application to reduced field‐of‐view imaging"
+  year: "2025"
+  journal: "Magn Reson Med"
+  authors: "Yang, JY., Nielsen, JF., Fessler, J., Jiang, Y."
+  url: "https://doi.org/10.1002/mrm.30607"
