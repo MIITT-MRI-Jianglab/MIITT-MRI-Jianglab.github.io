@@ -22,10 +22,11 @@ author_profile: false
       </div>
       <div class="news-text">
         {{ item.content | markdownify }}
-      </div>
+      
       {% if item.link %}
       <a href="{{ item.link.url }}" class="news-link">{{ item.link.text }}</a>
       {% endif %}
+      </div>
     </div>
   </div>
   {% endfor %}
