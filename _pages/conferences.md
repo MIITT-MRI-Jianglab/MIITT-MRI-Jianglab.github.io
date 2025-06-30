@@ -10,10 +10,10 @@ author_profile: true
 {% assign years_sorted = confs_by_year | sort: 'name' | reverse %}
 
 {% for year in years_sorted %}
-    {% assign sorted_confs_in_year = year.items | sort: 'program_num' %}
+    {% assign sorted_confs_in_year = year.items | sort: 'program' %}
     
     {% for conference in sorted_confs_in_year %}
-    <li style="font-size: 14px; margin-bottom: 20px;">
+    <li style="font-size: 15px; margin-bottom: 15px;">
         <div style="margin-top: 0px;">
             <em>{{ conference.authors }}</em> 
             <strong>{{ conference.title }}</strong>,
