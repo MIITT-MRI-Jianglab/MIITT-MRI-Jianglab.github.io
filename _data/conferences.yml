@@ -83,17 +83,40 @@
 -
   title: "Risk Stratification of PI-RADS 3 Lesions Based on Mean ADC Values"  
   year: "2025"  
-  conference: "ISMRM Singapore"  
+  conference: "ISMRM Hawaii"  
   authors: "Kaur T, Jiang Y, Seiberlich N, Hussain H, Wells S, Ramirez J, Neshewat J, Gulani V."  
   format: "Digital Poster"  
   program_number: "2278"  
 -
   title: "Rationale and Clinical Feasibility of MRI-Guided Percutaneous Transgluteal Route In-Bore Prostate Biopsy at 0.55T"  
   year: "2025"  
-  conference: "ISMRM Singapore"  
+  conference: "ISMRM Hawaii"  
   authors: "Kaur T, Jiang Y, Seiberlich N, Hussain H, Wells S, Wei J, Caoili E, Gulani V."  
   format: "Oral Talk"  
   program_number: "0649"  
   award: "Summa Cum Laude"
+-
+  title: "Harmonization of AI/DL accelerated quantitative bi-parametric prostate MRI: demonstration in multi-parametric phantom and patients"  
+  year: "2025"  
+  conference: "ISMRM Hawaii"  
+  authors: "Malyarenko D, Swanson S, Richardson J, Lowe S, O'Connor J, Fajardo J, Jiang Y, Wells S, Chenevert, T."  
+  format: "Power Pitch"  
+  program_number: "0649"  
+-
+  title: "Analysis of Magnetic Resonance Elastography Prostate Biomarkers in Healthy and Lower Urinary Tract Symptoms Subjects"  
+  year: "2025"  
+  conference: "ISMRM Hawaii"  
+  authors: "Johnson C, Gonzalez-Pereira JP, Ricke W, Grimes M, Hall T, Jiang Y, Gulani V, Roldan-Alzate A, Brace C, Wells S."  
+  format: "Digital Poster"  
+  program_number: "2819"
+-
+  title: "Accelerating 3D High-Resolution Brain MR Fingerprinting at 0.55T: Balanced Free-Precession meets Deep Learning"  
+  year: "2025"  
+  conference: "ISMRM Hawaii"  
+  authors: "Rizzo R, Liu Z, Fajardo J, Griesler T, Hamilton J, Jiang Y, Seiberlich N."  
+  format: "Oral Talk"  
+  program_number: "0653"
+  
+
 
 
