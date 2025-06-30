@@ -42,9 +42,10 @@ author_profile: false
     display: flex;
     margin-bottom: 50px;
     padding: 25px;
-    background: white;
+    background: var(--global-bg-color);
+    color: var(--global-text-color);
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px var(--global-border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -78,7 +79,7 @@ author_profile: false
   .news-title {
     margin-top: 0;
     margin-bottom: 10px;
-    color: #2c3e50;
+    color: var(--global-text-color);
     font-size: 22px;
   }
   
@@ -107,7 +108,7 @@ author_profile: false
   .news-text {
     margin-bottom: 15px;
     line-height: 1.6;
-    color: #34495e;
+    color: var(--global-text-color);
   }
   
   .news-link {
