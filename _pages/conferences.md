@@ -31,7 +31,7 @@ author_profile: true
     {% assign sorted_confs_in_year = confs_with_num | sort: 'sort_num' %}
     
     {% for conference in sorted_confs_in_year %}
-    <li style="font-size: 16px; margin-bottom: 20px;">
+    <li style="font-size: 14px; margin-bottom: 18px;">
         <div style="margin-top: 5px;">
             <em>{{ conference.authors }}</em> 
             <strong>{{ conference.title }}</strong>,
@@ -51,12 +51,12 @@ author_profile: true
                 <span style="
                     background-color: #E4D6A0;
                     color: #000;
-                    padding: 2px 8px;
+                    padding: 2px 4px;
                     border-radius: 3px;
-                    margin-left: 10px;
+                    margin-left: 5px;
                     font-weight: bold;
                     display: inline-block;
-                    margin-top: 3px;
+                    margin-top: 2px;
                 ">{{ conference.award }}</span>
             {% endif %}
         </div>
