@@ -4,7 +4,7 @@
   conference: "ISMRM Hawaii"
   authors: "Yu H, Fessler JA, Jiang Y."
   format: "Oral Talk"
-  program: 0389
+  program: 389
   award: "Summa Cum Laude"
 -
   title: "3D High-Resolution Reduced Field-of-View T2-Weighted Imaging by Combining 3D EPI and Spatially Selective Pulses"
@@ -41,7 +41,7 @@
   conference: "ISMRM Toronto"
   authors: "Yang J, Nielsen JF, Jiang Y." 
   format: "Power Pitch"
-  program: 0200
+  program: 200
 #-
 #  title: "Multidimensional RF Pulse Design in Spin-Domain Using Auto-Differentiation"
 #  year: "2023"
@@ -63,7 +63,7 @@
   conference: "ISMRM Singapore"  
   authors: "Kaur T, Jiang Y, Seiberlich N, Hussain H, Wells S, Caoili E, Gulani V."  
   format: "Power Pitch"  
-  program: 0460 
+  program: 460 
 #-
 # title: "Feasibility of MRI-Guided In-Bore Prostate Biopsies at 0.55T"  
 #  year: "2024"  
@@ -93,7 +93,7 @@
   conference: "ISMRM Hawaii"  
   authors: "Kaur T, Jiang Y, Seiberlich N, Hussain H, Wells S, Wei J, Caoili E, Gulani V."  
   format: "Oral Talk"  
-  program: 0649  
+  program: 649  
   award: "Summa Cum Laude"
 -
   title: "Harmonization of AI/DL accelerated quantitative bi-parametric prostate MRI: demonstration in multi-parametric phantom and patients"  
@@ -101,7 +101,7 @@
   conference: "ISMRM Hawaii"  
   authors: "Malyarenko D, Swanson S, Richardson J, Lowe S, O'Connor J, Fajardo J, Jiang Y, Wells S, Chenevert, T."  
   format: "Power Pitch"  
-  program: 0103
+  program: 103
 -
   title: "Analysis of Magnetic Resonance Elastography Prostate Biomarkers in Healthy and Lower Urinary Tract Symptoms Subjects"  
   year: "2025"  
@@ -129,14 +129,14 @@
   conference: "ISMRM Hawaii"  
   authors: "Tan Z, Liebig P, Hofmann A, Jaroszewicz M, Jiang Y, Gulani V, Laun F, Knoll F."  
   format: "Oral Talk"  
-  program: 0743
+  program: 743
 -
   title: "Prostate MR Fingerprinting T1 and T2 quantification at 0.55T using tensor denoising"  
   year: "2025"  
   conference: "ISMRM Hawaii"  
   authors: "Fajardo J, Kaur T, Rizzo R, Seiberlich N, Gulani V, Jiang Y."  
   format: "Oral Talk"  
-  program: 0803
+  program: 803
 -
   title: "Vendor-Neutral, Free-Breathing Fat Quantification Demonstrates Low Bias and High Reproducibility Across Centers at 0.55T, 1.5T, and 3T"  
   year: "2025"  
