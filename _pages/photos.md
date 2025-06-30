@@ -2,7 +2,7 @@
 title: Photos
 layout: archive
 permalink: /photos/
-author_profile: true
+author_profile: false
 ---
 
 <div class="gallery-intro">
