@@ -116,6 +116,20 @@
   authors: "Rizzo R, Liu Z, Fajardo J, Griesler T, Hamilton J, Jiang Y, Seiberlich N."  
   format: "Oral Talk"  
   program_number: "0653"
+-
+  title: "Functional Creatine Kinase Imaging (fCKI) for brain functional and metabolic imaging"  
+  year: "2025"  
+  conference: "ISMRM Hawaii"  
+  authors: "Widmaier M, Kaiser A, Wenz D, Xiao Y, Lim S-I, Jiang Y, Xin L."  
+  format: "Digital Poster"  
+  program_number: "3079"
+-
+  title: "Self-gated self-supervised ADMM unrolling enables mesoscale high-resolution motion-robust diffusion-weighted imaging"  
+  year: "2025"  
+  conference: "ISMRM Hawaii"  
+  authors: "Tan Z, Liebig P, Hofmann A, Jaroszewicz M, Jiang Y, Gulani V, Laun F, Knoll F."  
+  format: "Oral Talk"  
+  program_number: "0743"
   
 
 
