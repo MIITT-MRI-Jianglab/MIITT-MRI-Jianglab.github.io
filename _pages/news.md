@@ -63,7 +63,7 @@ author_profile: false
   
   .news-image img {
     width: 100%;
-    height: 100%;
+    height: flex;
     object-fit: cover;
     transition: transform 0.5s ease;
   }
