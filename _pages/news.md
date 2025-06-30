@@ -21,10 +21,13 @@ author_profile: false
         {% endif %}
       </div>
       <div class="news-text">
-        {{ item.content | markdownify }}
-        {% if item.link %}
-        <a href="{{ item.link.url }}" class="news-link">{{ item.link.text }}</a>
-        {% endif %}
+        <!-- Wrap content and link in a container -->
+        <div class="news-content-container">
+          {{ item.content | markdownify }}
+          {% if item.link %}
+          <a href="{{ item.link.url }}" class="news-link">{{ item.link.text }}</a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
@@ -111,9 +114,20 @@ author_profile: false
     color: var(--global-text-color);
   }
   
-  /* Fix for making the link appear inline */
-  .news-text p:last-child {
+  /* NEW: Container for content and link */
+  .news-content-container {
     display: inline;
+  }
+  
+  /* NEW: Make all child elements inline */
+  .news-content-container > * {
+    display: inline;
+  }
+  
+  /* NEW: Add space between paragraphs */
+  .news-content-container > p + p:before {
+    content: " ";
+    white-space: pre-wrap;
   }
   
   .news-link {
