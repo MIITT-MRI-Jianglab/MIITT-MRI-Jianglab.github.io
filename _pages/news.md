@@ -113,9 +113,9 @@ author_profile: false
   .news-link {
     display: inline;
     color: #2980b9;
-    font-weight: 600;
+    /*font-weight: 400;
     text-decoration: none;
-    /*transition: color 0.3s ease;*/
+    transition: color 0.3s ease;*/
     margin-left: 5px; /* Add space between text and link */
   }
   
