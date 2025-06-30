@@ -106,6 +106,8 @@ author_profile: false
     margin-bottom: 15px;
     line-height: 1.6;
     color: var(--global-text-color);
+    display: inline-block; /* Add this */
+  width: 100%; /* Add this */
   }
   
   .news-link {
@@ -114,6 +116,7 @@ author_profile: false
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
+    margin-left: 5px; /* Add space between text and link */
   }
   
   .news-link:hover {
