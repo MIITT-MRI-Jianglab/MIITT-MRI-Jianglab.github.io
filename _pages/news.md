@@ -21,7 +21,12 @@ author_profile: false
         {% endif %}
       </div>
       <div class="news-text">
-        {{ item.content | markdownify}}{% if item.link %}<a href="{{item.link.url}}" class="news-link">{{item.link.text}}</a>{% endif %}
+        {{ item.content | markdownify}}
+        {% if item.link %}
+        <span class="news-link-container">
+          <a href="{{item.link.url}}" class="news-link">{{item.link.text}}</a>
+        </span>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -106,9 +111,19 @@ author_profile: false
     margin-bottom: 15px;
     line-height: 1.6;
     color: var(--global-text-color);
-    display: inline-block; /* Add this */
-  width: 100%; /* Add this */
+    display: block; /* Add this */
+    width: 100%; /* Add this */
+    overflow: hidden;
   }
+  .news-text > : last-child {
+    display:inline;
+    margin-left: 5px;
+  }
+  .news-link-container {
+  display: inline;
+  margin-left: 5px;
+}
+
   
   .news-link {
     display: inline;
@@ -117,6 +132,7 @@ author_profile: false
     text-decoration: none;
     transition: color 0.3s ease;*/
     margin-left: 5px; /* Add space between text and link */
+    white-space: nowrap;
   }
   
   .news-link:hover {
