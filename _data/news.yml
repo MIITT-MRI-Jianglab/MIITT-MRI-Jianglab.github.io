@@ -18,6 +18,26 @@
     text: "Read more"
     url: "https://www.ismrm.org/25/docs/25-AMPC.pdf"
 
+- title: "2025 ISMRM Summa Cum Laude Merit Award to Hongze Yu"
+  date: 2025-05-10
+  image: "/images/ISMRM2025_Hongze_389.png"
+  category: "Award"
+  content: |
+    'Bilevel Optimized Implicit Neural Representation for Scan-Specific Accelerated MRI Reconstruction' received Summa Cum Laude award in ISMRM 2025.
+  link:
+    text: "Read more"
+    url: "https://www.ismrm.org/25/docs/25-Summa.pdf"
+
+- title: "2025 ISMRM Summa Cum Laude Merit Award to Tejinder Kaur"
+  date: 2025-05-10
+  image: "/images/ISMRM2025_Tejinder_649.png"
+  category: "Award"
+  content: |
+    'Rationale and Clinical Feasibility of MRI-Guided Percutaneous Transgluteal Route In-Bore Prostate Biopsy at 0.55T' received Summa Cum Laude award in ISMRM 2025.
+  link:
+    text: "Read more"
+    url: "https://www.ismrm.org/25/docs/25-Summa.pdf"
+
 
 
 
